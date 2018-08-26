@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html lang="en-GB">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Javascript30</title>
+		<meta name="description" content="Demo page of Javascript30 course" />
+		<meta name="keywords" content="html, css, javascript, es6" />
+		<meta name="author" content="Alice G Herbison" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+		<body>
+			<header>
+				<h1>Javascript30</h1>
+				<p>Demo page and learnings from the 30 Javascript exercises in the <a href="https://javascript30.com/">Javascript30</a> course from <a href="https://wesbos.com/">Wes Bos</a>. No compilers, no frameworks, no libraries - just vanilla Javascript.</p>
+				<p>By <a href="https://www.alicegherbison.com">Alice</a>.</p>
+			</header>
+			<main>
+				<ul class="exercises">
+					<li>
+						<h2>Day 1: Drum kit</h2>
+						<a href="day1/index.html"><img src="img/day1.png" alt="Drum kit" /></a>
+						<ul class="links">
+							<li><a href="day1/index.html">Demo</a></li>
+							<li><a href="#">Github</a></li>
+						</ul>
+						<h3>Learnings</h3>
+						<ul>
+							<li><code>&lt;kbd&gt;</code> element exists for keyboard input</li>
+							<li>transition events</li>
+							<li>that there are functions and properties available for specific elements e.g. <code>.play();</code> and <code>.currentTime</code>
+						</ul>
+						<p>It also took me a little while to realise that the numerical value of the <code>data-key</code> attribute on the <code>&lt;div&gt;</code> and <code>&lt;audio&gt;</code> elements isn't technically the same <em>thing</em> as the <code>keyCode</code> value generated from the <code>keyDown</code> event - they're just the same number being used to link the two together.</p>				
+					</li>
+				</ul>
+			</main>
+		</body>
+</html>
