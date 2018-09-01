@@ -8,13 +8,6 @@
 
     <div class="clock">
       <div class="clock-face">
-        <div class="noon-six"></div>
-        <div class="one-seven"></div>
-        <div class="two-eight"></div>
-        <div class="three-nine"></div>
-        <div class="four-ten"></div>
-        <div class="five-eleven"></div>
-        <div class="hour-circle"></div>
         <div class="one-thirtyone"></div>
         <div class="two-thirtytwo"></div>
         <div class="three-thirtythree"></div>
@@ -23,6 +16,30 @@
         <div class="seven-thirtyseven"></div>
         <div class="eight-thirtyeight"></div>
         <div class="nine-thirtynine"></div>
+        <div class="eleven-fourtyone"></div>
+        <div class="twelve-fourtytwo"></div>
+        <div class="thirteen-fourtythree"></div>
+        <div class="fourteen-fourtyfour"></div>
+        <div class="sixteen-fourtysix"></div>
+        <div class="seventeen-fourtyseven"></div>
+        <div class="eighteen-fourtyeight"></div>
+        <div class="nineteen-fourtynine"></div>
+        <div class="twentyone-fiftyone"></div>
+        <div class="twentytwo-fiftytwo"></div>
+        <div class="twentythree-fiftythree"></div>
+        <div class="twentyfour-fiftyfour"></div>
+        <div class="twentysix-fiftysix"></div>
+        <div class="twentyseven-fiftyseven"></div>
+        <div class="twentyeight-fiftyeight"></div>
+        <div class="twentynine-fiftynine"></div>
+        <div class="minutes-circle"></div>
+        <div class="noon-six"></div>
+        <div class="one-seven"></div>
+        <div class="two-eight"></div>
+        <div class="three-nine"></div>
+        <div class="four-ten"></div>
+        <div class="five-eleven"></div>
+        <div class="hour-circle"></div>
         <div class="centre-support"></div>
         <div class="hand hour-hand"></div>
         <div class="hand min-hand"></div>
@@ -108,6 +125,16 @@
       left: 14%;
     }
 
+    .minutes-circle {
+      background: #ffffff;
+      width: 93%;
+      height: 93%;
+      border-radius: 50%;
+      position: absolute;
+      top: 3.9%;
+      left: 3.9%;
+    }
+
     .noon-six {
       transform: rotate(90deg);
     }
@@ -128,44 +155,125 @@
       transform: rotate(60deg);
     }
 
-    .one-thirtyone, .two-thirtytwo, .three-thirtythree, .four-thirtyfour, .six-thirtysix, .seven-thirtyseven, .eight-thirtyeight, .nine-thirtynine {
+    .one-thirtyone, .two-thirtytwo, .three-thirtythree, .four-thirtyfour, .six-thirtysix, .seven-thirtyseven, .eight-thirtyeight, .nine-thirtynine, .eleven-fourtyone, .twelve-fourtytwo, .thirteen-fourtythree, .fourteen-fourtyfour, .sixteen-fourtysix, .seventeen-fourtyseven, .eighteen-fourtyeight, .nineteen-fourtynine, .twentyone-fiftyone, .twentytwo-fiftytwo, .twentythree-fiftythree, .twentyfour-fiftyfour, .twentysix-fiftysix, .twentyseven-fiftyseven, .twentyeight-fiftyeight, .twentynine-fiftynine {
       width: 100%;
       height: 2px;
-      background: rgba(160,160,160,255);
+      background: rgba(201,201,201,255);
       position: absolute;
       top: 50.25%;
     }
 
     .one-thirtyone {
       transform: rotate(276deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255) 98%,rgba(140,140,140,255));
     }
 
     .two-thirtytwo {
       transform: rotate(282deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255) 97%,rgba(140,140,140,255));
     }
 
     .three-thirtythree {
       transform: rotate(288deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255) 96%,rgba(140,140,140,255));
     }
 
     .four-thirtyfour {
       transform: rotate(294deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
     }
 
     .six-thirtysix {
       transform: rotate(306deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
     }
 
     .seven-thirtyseven {
       transform: rotate(312deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
     }
 
     .eight-thirtyeight {
       transform: rotate(318deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
     }
 
     .nine-thirtynine {
       transform: rotate(324deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
+    }
+
+    .eleven-fourtyone {
+      transform: rotate(336deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
+    }
+
+    .twelve-fourtytwo {
+      transform: rotate(342deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
+    }
+
+    .thirteen-fourtythree {
+      transform: rotate(348deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
+    }
+
+    .fourteen-fourtyfour {
+      transform: rotate(354deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
+    }
+
+    .sixteen-fourtysix {
+      transform: rotate(6deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
+    }
+
+    .seventeen-fourtyseven {
+      transform: rotate(12deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
+    }
+
+    .eighteen-fourtyeight {
+      transform: rotate(18deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255) 97%,rgba(140,140,140,255));
+    }
+
+    .nineteen-fourtynine {
+      transform: rotate(24deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255) 98%,rgba(140,140,140,255));
+    }
+
+    .twentyone-fiftyone {
+      transform: rotate(36deg);
+      background-image:linear-gradient(90deg, rgba(201,201,201,255) 99%,rgba(140,140,140,255));
+    }
+
+    .twentytwo-fiftytwo {
+      transform: rotate(42deg);
+    }
+
+    .twentythree-fiftythree {
+      transform: rotate(48deg);
+    }
+
+    .twentyfour-fiftyfour {
+      transform: rotate(54deg);
+    }
+
+    .twentysix-fiftysix {
+      transform: rotate(66deg);
+    }
+
+    .twentyseven-fiftyseven {
+      transform: rotate(72deg);
+    }
+
+    .twentyeight-fiftyeight {
+      transform: rotate(78deg);
+    }
+
+    .twentynine-fiftynine {
+      transform: rotate(84deg);
     }
 
   </style>
