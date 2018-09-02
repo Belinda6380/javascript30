@@ -44,6 +44,8 @@
         <div class="hand hour-hand"></div>
         <div class="hand min-hand"></div>
         <div class="hand second-hand"></div>
+        <div class="hand-circle"></div>
+        <div class="centre-circle"></div>
       </div>
     </div>
 
@@ -98,13 +100,66 @@
 
     .hand {
       width:50%;
-      height:6px;
+      height:3px;
       background: #1c56dd;
       position: absolute;
       top:50%;
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58 ,1);
+    }
+
+    .min-hand {
+      width: 7rem;
+      left: calc(50% - 7rem);
+      background:rgba(187,147,122,255);
+    }
+
+    .min-hand::after {
+      width: 1.3rem;
+      height: 3px;
+      display: block;
+      content: "";
+      background:rgba(187,147,122,255);
+      position: absolute;
+      top: 0px;
+      left: 7rem;
+      box-shadow: -1px 1px 1px 1px rgba(60,60,60,255);
+    }
+
+    .hour-hand {
+      width: 5rem;
+      left: calc(50% - 5rem);
+      background:rgba(212,185,165,255);
+    }
+
+    .hour-hand::after {
+      width: 1.3rem;
+      height: 3px;
+      display: block;
+      position: absolute;
+      content: "";
+      background:rgba(212,185,165,255);
+      top: 0;
+      left: 5rem;
+    }
+
+    .second-hand {
+      width: 3rem;
+      left: calc(50% - 3rem + 1px);
+/*      background:rgba(120,120,120,255);
+*/      background-image:linear-gradient(120deg, rgba(120,120,120,255), rgba(200,200,200,255));
+    }
+
+    .second-hand::after {
+      width: 1.3rem;
+      height: 3px;
+      display: block;
+      position: absolute;
+      content: "";
+      background:rgba(120,120,120,255);
+      top: 0;
+      left: 3rem;
     }
 
     .noon-six, .one-seven, .two-eight, .three-nine, .four-ten, .five-eleven {
@@ -133,6 +188,27 @@
       position: absolute;
       top: 3.9%;
       left: 3.9%;
+    }
+
+    .hand-circle {
+      position: absolute;
+      border-radius:50%;
+      background-image:linear-gradient(120deg, rgba(187,147,122,255), rgba(212,185,165,255));
+      width: 8px;
+      height: 8px;
+      top: calc(50% - 4px);
+      left: calc(50% - 4px);
+    }
+
+    .centre-circle {
+      position: absolute;
+      border-radius: 50%;
+      background: #000000;
+      width: 3px;
+      height: 3px;
+      top: calc(50% - 1px);
+      left: calc(50% - 1px);
+      box-shadow: -1px 1px 1px 0px rgba(60,60,60,255);
     }
 
     .noon-six {
