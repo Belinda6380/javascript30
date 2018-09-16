@@ -3,396 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>JS + CSS clock</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <div class="clock">
-      <div class="clock-face">
-        <div class="one-thirtyone"></div>
-        <div class="two-thirtytwo"></div>
-        <div class="three-thirtythree"></div>
-        <div class="four-thirtyfour"></div>
-        <div class="six-thirtysix"></div>
-        <div class="seven-thirtyseven"></div>
-        <div class="eight-thirtyeight"></div>
-        <div class="nine-thirtynine"></div>
-        <div class="eleven-fourtyone"></div>
-        <div class="twelve-fourtytwo"></div>
-        <div class="thirteen-fourtythree"></div>
-        <div class="fourteen-fourtyfour"></div>
-        <div class="sixteen-fourtysix"></div>
-        <div class="seventeen-fourtyseven"></div>
-        <div class="eighteen-fourtyeight"></div>
-        <div class="nineteen-fourtynine"></div>
-        <div class="twentyone-fiftyone"></div>
-        <div class="twentytwo-fiftytwo"></div>
-        <div class="twentythree-fiftythree"></div>
-        <div class="twentyfour-fiftyfour"></div>
-        <div class="twentysix-fiftysix"></div>
-        <div class="twentyseven-fiftyseven"></div>
-        <div class="twentyeight-fiftyeight"></div>
-        <div class="twentynine-fiftynine"></div>
-        <div class="minutes-circle"></div>
-        <div class="noon-six"></div>
-        <div class="one-seven"></div>
-        <div class="two-eight"></div>
-        <div class="three-nine"></div>
-        <div class="four-ten"></div>
-        <div class="five-eleven"></div>
-        <div class="hour-circle"></div>
-        <div class="centre-support"></div>
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"></div>
-        <div class="hand-circle"></div>
-        <div class="centre-circle"></div>
-      </div>
+  <div class="clock">
+    <div class="clock-face">
+      <div class="one-thirtyone"></div>
+      <div class="two-thirtytwo"></div>
+      <div class="three-thirtythree"></div>
+      <div class="four-thirtyfour"></div>
+      <div class="six-thirtysix"></div>
+      <div class="seven-thirtyseven"></div>
+      <div class="eight-thirtyeight"></div>
+      <div class="nine-thirtynine"></div>
+      <div class="eleven-fourtyone"></div>
+      <div class="twelve-fourtytwo"></div>
+      <div class="thirteen-fourtythree"></div>
+      <div class="fourteen-fourtyfour"></div>
+      <div class="sixteen-fourtysix"></div>
+      <div class="seventeen-fourtyseven"></div>
+      <div class="eighteen-fourtyeight"></div>
+      <div class="nineteen-fourtynine"></div>
+      <div class="twentyone-fiftyone"></div>
+      <div class="twentytwo-fiftytwo"></div>
+      <div class="twentythree-fiftythree"></div>
+      <div class="twentyfour-fiftyfour"></div>
+      <div class="twentysix-fiftysix"></div>
+      <div class="twentyseven-fiftyseven"></div>
+      <div class="twentyeight-fiftyeight"></div>
+      <div class="twentynine-fiftynine"></div>
+      <div class="minutes-circle"></div>
+      <div class="noon-six"></div>
+      <div class="one-seven"></div>
+      <div class="two-eight"></div>
+      <div class="three-nine"></div>
+      <div class="four-ten"></div>
+      <div class="five-eleven"></div>
+      <div class="hour-circle"></div>
+      <div class="centre-support"></div>
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
+      <div class="hand-circle"></div>
+      <div class="centre-circle"></div>
     </div>
-
-  <style>
-    html {
-      font-family:'helvetica neue';
-      text-align: center;
-      font-size: 10px;
-    }
-
-    body {
-      margin: 0;
-      font-size: 2rem;
-      display:flex;
-      flex:1;
-      min-height: 100vh;
-      align-items: center;
-    }
-
-    .clock {
-      width: 30rem;
-      height: 30rem;
-      border: 10px solid black;
-      background: #ffffff;
-      border-radius:50%;
-      margin:50px auto;
-      position: relative;
-      padding: 1.2rem;
-      box-shadow:
-        1px -1px 0 1px rgba(124,124,124,255),
-        inset -15px 8px 5px 5px rgba(185,185,185,255);
-    }
-
-    .clock-face {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transform: translateY(-3px); /* account for the height of the clock hands */
-    }
-
-    .centre-support {
-      width: 14rem;
-      height: 14rem;
-      background-color: black;
-      border-radius: 50%;
-      position: absolute;
-      top: 27%;
-      left: 27%;
-      box-shadow: -10px 7px 5px 1px rgba(185,185,185,255);
-    }
-
-    .hand {
-      height:3px;
-      position: absolute;
-      top:50%;
-      transform-origin: 100%;
-      transform: rotate(90deg);
-      transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58 ,1);
-    }
-
-    .hour-hand {
-      width: 5rem;
-      left: calc(50% - 5rem);
-      background:rgba(212,185,165,255);
-    }
-
-    .hour-hand::after {
-      width: 1.3rem;
-      height: 3px;
-      display: block;
-      position: absolute;
-      content: "";
-      background:rgba(212,185,165,255);
-      top: 0;
-      left: 5rem;
-    }
-
-    .min-hand {
-      width: 7rem;
-      left: calc(50% - 7rem);
-      background:rgba(187,147,122,255);
-    }
-
-    .min-hand::after {
-      width: 1.3rem;
-      height: 3px;
-      display: block;
-      content: "";
-      background:rgba(187,147,122,255);
-      position: absolute;
-      top: 0px;
-      left: 7rem;
-      box-shadow: -1px 1px 1px 1px rgba(60,60,60,255);
-    }
-
-    .second-hand {
-      width: 3rem;
-      left: calc(50% - 3rem + 1px);
-      background-image:linear-gradient(120deg, rgba(120,120,120,255), rgba(200,200,200,255));
-    }
-
-    .second-hand::after {
-      width: 1.3rem;
-      height: 3px;
-      display: block;
-      position: absolute;
-      content: "";
-      background:rgba(120,120,120,255);
-      top: 0;
-      left: 3rem;
-    }
-
-    .noon-six, .one-seven, .two-eight, .three-nine, .four-ten, .five-eleven {
-      width: 100%;
-      height: 4px;
-      background: black;
-      position: absolute;
-      top: 50%;
-    }
-
-    .hour-circle {
-      background: #ffffff;
-      width: 22rem;
-      height: 22rem;
-      border-radius: 50%;
-      position: absolute;
-      top: 14%;
-      left: 14%;
-    }
-
-    .minutes-circle {
-      background: #ffffff;
-      width: 93%;
-      height: 93%;
-      border-radius: 50%;
-      position: absolute;
-      top: 3.9%;
-      left: 3.9%;
-    }
-
-    .hand-circle {
-      position: absolute;
-      border-radius:50%;
-      background-image:linear-gradient(120deg, rgba(187,147,122,255), rgba(212,185,165,255));
-      width: 8px;
-      height: 8px;
-      top: calc(50% - 4px);
-      left: calc(50% - 4px);
-    }
-
-    .centre-circle {
-      position: absolute;
-      border-radius: 50%;
-      background: #000000;
-      width: 3px;
-      height: 3px;
-      top: calc(50% - 1px);
-      left: calc(50% - 1px);
-      box-shadow: -1px 1px 1px 0px rgba(60,60,60,255);
-    }
-
-    .noon-six {
-      transform: rotate(90deg);
-    }
-
-    .one-seven {
-      transform: rotate(300deg);
-    }
-
-    .two-eight {
-      transform: rotate(330deg);
-    }
-
-    .four-ten {
-      transform: rotate(30deg);
-    }
-
-    .five-eleven {
-      transform: rotate(60deg);
-    }
-
-    .one-thirtyone, .two-thirtytwo, .three-thirtythree, .four-thirtyfour, .six-thirtysix, .seven-thirtyseven, .eight-thirtyeight, .nine-thirtynine, .eleven-fourtyone, .twelve-fourtytwo, .thirteen-fourtythree, .fourteen-fourtyfour, .sixteen-fourtysix, .seventeen-fourtyseven, .eighteen-fourtyeight, .nineteen-fourtynine, .twentyone-fiftyone, .twentytwo-fiftytwo, .twentythree-fiftythree, .twentyfour-fiftyfour, .twentysix-fiftysix, .twentyseven-fiftyseven, .twentyeight-fiftyeight, .twentynine-fiftynine {
-      width: 100%;
-      height: 2px;
-      background: rgba(201,201,201,255);
-      position: absolute;
-      top: 50.25%;
-    }
-
-    .one-thirtyone {
-      transform: rotate(276deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255) 98%,rgba(140,140,140,255));
-    }
-
-    .two-thirtytwo {
-      transform: rotate(282deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255) 97%,rgba(140,140,140,255));
-    }
-
-    .three-thirtythree {
-      transform: rotate(288deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255) 96%,rgba(140,140,140,255));
-    }
-
-    .four-thirtyfour {
-      transform: rotate(294deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
-    }
-
-    .six-thirtysix {
-      transform: rotate(306deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
-    }
-
-    .seven-thirtyseven {
-      transform: rotate(312deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
-    }
-
-    .eight-thirtyeight {
-      transform: rotate(318deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
-    }
-
-    .nine-thirtynine {
-      transform: rotate(324deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
-    }
-
-    .eleven-fourtyone {
-      transform: rotate(336deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
-    }
-
-    .twelve-fourtytwo {
-      transform: rotate(342deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
-    }
-
-    .thirteen-fourtythree {
-      transform: rotate(348deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
-    }
-
-    .fourteen-fourtyfour {
-      transform: rotate(354deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
-    }
-
-    .sixteen-fourtysix {
-      transform: rotate(6deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
-    }
-
-    .seventeen-fourtyseven {
-      transform: rotate(12deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
-    }
-
-    .eighteen-fourtyeight {
-      transform: rotate(18deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255) 97%,rgba(140,140,140,255));
-    }
-
-    .nineteen-fourtynine {
-      transform: rotate(24deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255) 98%,rgba(140,140,140,255));
-    }
-
-    .twentyone-fiftyone {
-      transform: rotate(36deg);
-      background-image:linear-gradient(90deg, rgba(201,201,201,255) 99%,rgba(140,140,140,255));
-    }
-
-    .twentytwo-fiftytwo {
-      transform: rotate(42deg);
-    }
-
-    .twentythree-fiftythree {
-      transform: rotate(48deg);
-    }
-
-    .twentyfour-fiftyfour {
-      transform: rotate(54deg);
-    }
-
-    .twentysix-fiftysix {
-      transform: rotate(66deg);
-    }
-
-    .twentyseven-fiftyseven {
-      transform: rotate(72deg);
-    }
-
-    .twentyeight-fiftyeight {
-      transform: rotate(78deg);
-    }
-
-    .twentynine-fiftynine {
-      transform: rotate(84deg);
-    }
-
-  </style>
-
-  <script>
-
-    const secondHand = document.querySelector('.second-hand');
-    const minsHand = document.querySelector('.min-hand');
-    const hourHand = document.querySelector('.hour-hand');
-
-    function setDate() {
-      const now = new Date();
-
-      const seconds = now.getSeconds();
-      const secondsDegrees = ((seconds / 60) * 360) + 90;
-      secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-      
-      const mins = now.getMinutes();
-      const minsDegrees = ((mins / 60) * 360) + 90;
-      minsHand.style.transform = `rotate(${minsDegrees}deg)`;
-
-      const hours = now.getHours();
-      const hoursDegrees = ((hours / 12) * 360) + 90;
-      hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
-
-      if (secondsDegrees === 90) {
-        secondHand.style.transition = "all 0s";
-      } else {
-        secondHand.style.transition = "";
-      }
-
-      if (minsDegrees === 90) {
-        minsHand.style.transition = "all 0s";
-      } else {
-        minsHand.style.transition = "";
-      }
-
-      if (hoursDegrees === 90) {
-        hourHand.style.transition = "all 0s";
-      } else {
-        hourHand.style.transition = "";
-      }   
-
-    }
-
-    setInterval(setDate, 1000);
-
-  </script>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

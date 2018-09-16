@@ -1,58 +1,58 @@
 <!DOCTYPE html>
-	<html lang="en-GB">
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Javascript30</title>
-		<meta name="description" content="Demo page of Javascript30 course" />
-		<meta name="keywords" content="html, css, javascript, es6" />
-		<meta name="author" content="Alice G Herbison" />
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-		<body>
-			<header>
-				<h1>Javascript30</h1>
-				<p>Demo page and learnings from the 30 Javascript exercises in the <a href="https://javascript30.com/">Javascript30</a> course from <a href="https://wesbos.com/">Wes Bos</a>. No compilers, no frameworks, no libraries - just vanilla Javascript.</p>
-				<p>By <a href="https://www.alicegherbison.com">Alice</a>.</p>
-			</header>
-			<main>
-				<ul class="exercises">
-					<li>
-						<h2>Day 1: Drum kit</h2>
-						<a href="day1/"><img src="img/day1.png" alt="Drum kit" /></a>
-						<ul class="links">
-							<li><a href="day1/">Demo</a></li>
-							<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day1">Github</a></li>
-						</ul>
-						<h3>Learnings</h3>
-						<ul>
-							<li><code>&lt;kbd&gt;</code> element exists for keyboard input</li>
-							<li>transition events and their objects</li>
-							<li>that there are functions and properties available for specific elements e.g. <code>.play();</code> and <code>.currentTime</code>
-						</ul>
-						<p>It also took me a little while to realise that the numerical value of the <code>data-key</code> attribute on the <code>&lt;div&gt;</code> and <code>&lt;audio&gt;</code> elements isn't technically the same <em>thing</em> as the <code>keyCode</code> value generated from the <code>keyDown</code> event - they're just the same number being used to link the two together.</p>				
-					</li>
-					<li>
-						<h2>Day 2: JS &amp; CSS clock</h2>
-						<a href="day2/"><img src="img/day2.png" alt="Clock" /></a>
-						<ul class="links">
-							<li><a href="day2/">Demo</a></li>
-							<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day2">Github</a></li>
-						</ul>
-						<h3>Learnings</h3>
-						<ul>
-							<li>transform-origin CSS property</li>
-							<li>transition-timing-function CSS property and the cubic bezier explorer tool in Google Chrome Developer Tools</li>
-							<li>setInterval function</li>
-							<li>Date object</li>
-							<li>getSeconds/getMinutes/getHours functions</li>
-							<li>CSS gradients</li>
-						</ul>
-						<p>I reskinned the clock to match a real one sold on <a href="https://www.trouva.com/products/nordal-station-clock">Trouva</a> and am very happy with the result. The CSS could be more robust and consistent, though.</p>
-					</li>
+<html lang="en-GB">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Javascript30</title>
+	<meta name="description" content="Demo page of Javascript30 course" />
+	<meta name="keywords" content="html, css, javascript, es6" />
+	<meta name="author" content="Alice G Herbison" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header>
+		<h1>Javascript30</h1>
+		<p>Demo page and learnings from the 30 Javascript exercises in the <a href="https://javascript30.com/">Javascript30</a> course from <a href="https://wesbos.com/">Wes Bos</a>. No compilers, no frameworks, no libraries - just vanilla Javascript.</p>
+		<p>By <a href="https://www.alicegherbison.com">Alice</a>.</p>
+	</header>
+	<main>
+		<ul class="exercises">
+			<li>
+				<h2>Day 1: Drum kit</h2>
+				<a href="day1/"><img src="img/day1.png" alt="Drum kit" /></a>
+				<ul class="links">
+					<li><a href="day1/">Demo</a></li>
+					<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day1">Github</a></li>
 				</ul>
-			</main>
-		</body>
-</html>
+				<h3>Learnings</h3>
+				<ul>
+					<li><code>&lt;kbd&gt;</code> element exists for keyboard input</li>
+					<li>transition events and their objects</li>
+					<li>that there are functions and properties available for specific elements e.g. <code>.play();</code> and <code>.currentTime</code>
+					</ul>
+					<p>It also took me a little while to realise that the numerical value of the <code>data-key</code> attribute on the <code>&lt;div&gt;</code> and <code>&lt;audio&gt;</code> elements isn't technically the same <em>thing</em> as the <code>keyCode</code> value generated from the <code>keyDown</code> event - they're just the same number being used to link the two together.</p>				
+				</li>
+				<li>
+					<h2>Day 2: JS &amp; CSS clock</h2>
+					<a href="day2/"><img src="img/day2.png" alt="Clock" /></a>
+					<ul class="links">
+						<li><a href="day2/">Demo</a></li>
+						<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day2">Github</a></li>
+					</ul>
+					<h3>Learnings</h3>
+					<ul>
+						<li>transform-origin CSS property</li>
+						<li>transition-timing-function CSS property and the cubic bezier explorer tool in Google Chrome Developer Tools</li>
+						<li>setInterval function</li>
+						<li>Date object</li>
+						<li>getSeconds/getMinutes/getHours functions</li>
+						<li>CSS gradients</li>
+					</ul>
+					<p>I reskinned the clock to match a real one sold on <a href="https://www.trouva.com/products/nordal-station-clock">Trouva</a> and am very happy with the result. The CSS could be more robust and consistent, though.</p>
+				</li>
+			</ul>
+		</main>
+	</body>
+	</html>
