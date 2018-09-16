@@ -68,16 +68,22 @@
     .clock {
       width: 30rem;
       height: 30rem;
-      border:10px solid black;
+      border: 10px solid black;
       background: #ffffff;
       border-radius:50%;
       margin:50px auto;
       position: relative;
-      padding:1.2rem;
+      padding: 1.2rem;
       box-shadow:
         1px -1px 0 1px rgba(124,124,124,255),
         inset -15px 8px 5px 5px rgba(185,185,185,255);
-        /*5px 10px 0 10px rgba(0,0,0,0.2);*/
+    }
+
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px); /* account for the height of the clock hands */
     }
 
     .centre-support {
@@ -91,22 +97,30 @@
       box-shadow: -10px 7px 5px 1px rgba(185,185,185,255);
     }
 
-    .clock-face {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transform: translateY(-3px); /* account for the height of the clock hands */
-    }
-
     .hand {
-      width:50%;
       height:3px;
-      background: #1c56dd;
       position: absolute;
       top:50%;
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58 ,1);
+    }
+
+    .hour-hand {
+      width: 5rem;
+      left: calc(50% - 5rem);
+      background:rgba(212,185,165,255);
+    }
+
+    .hour-hand::after {
+      width: 1.3rem;
+      height: 3px;
+      display: block;
+      position: absolute;
+      content: "";
+      background:rgba(212,185,165,255);
+      top: 0;
+      left: 5rem;
     }
 
     .min-hand {
@@ -127,28 +141,10 @@
       box-shadow: -1px 1px 1px 1px rgba(60,60,60,255);
     }
 
-    .hour-hand {
-      width: 5rem;
-      left: calc(50% - 5rem);
-      background:rgba(212,185,165,255);
-    }
-
-    .hour-hand::after {
-      width: 1.3rem;
-      height: 3px;
-      display: block;
-      position: absolute;
-      content: "";
-      background:rgba(212,185,165,255);
-      top: 0;
-      left: 5rem;
-    }
-
     .second-hand {
       width: 3rem;
       left: calc(50% - 3rem + 1px);
-/*      background:rgba(120,120,120,255);
-*/      background-image:linear-gradient(120deg, rgba(120,120,120,255), rgba(200,200,200,255));
+      background-image:linear-gradient(120deg, rgba(120,120,120,255), rgba(200,200,200,255));
     }
 
     .second-hand::after {
