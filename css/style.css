@@ -67,6 +67,10 @@ ul.exercises {
 	list-style: none;
 }
 
+ul.exercises > li:not(first-child) {
+	margin-top: 3rem;
+}
+
 ul.links {
 	list-style: none;
 	text-align: center;
