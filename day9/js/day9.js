@@ -1,24 +1,22 @@
-const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+const cats = [{ name: 'Magic', age: 15 }, { name: 'Garfield', age: 40 }];
 
 function makeObnoxious() {
-  const p = document.querySelector('p');
+  const p = document.querySelector('#unobnoxious');
   p.style.color = '#dd1c90';
   p.style.fontSize = '6rem';
   p.style.fontWeight = 'bold';
   p.style.textTransform = 'uppercase';
-  p.innerHTML = 'LOOK AT MEEEEE';
-  p.prepend('💜💙💚 ');
-  p.append(' 💛❤️💜');
+  p.innerHTML = '💜💙💚 LOOK AT MEEEEE 💛❤️💜';
 }
 
 // Regular
 console.log('Hello');
 
 // Interpolated
-console.log('hello I am a %s string!', '❤️');
+console.log('I %s cats', '❤️');
 
 // Styled
-console.log('%c I am some great text', 'font-size:50px; background: red; text-shadow: 10px 10px 0 blue;');
+console.log('%c Look how obnoxious I am', 'font-size:4rem; color: #10F0F0; background: #ffee00; text-shadow: 10px 10px 0 #dd1c90;');
 
 // warning!
 console.warn('OH NO!');
@@ -27,11 +25,11 @@ console.warn('OH NO!');
 console.error('ARGHHH!');
 
 // Info
-console.info('Is this the reality you wanted?');
+console.info('Is this the reality you wanted? ...우린 살아있어 tonight');
 
 // Testing
 const p = document.querySelector('p');
-console.assert(p.classList.contains('ouch'), 'That is wrong!');
+console.assert(p.classList.contains('ouch'), 'Something is very wrong here...');
 
 // clearing
 // console.clear();
@@ -41,12 +39,12 @@ console.log(p);
 console.dir(p);
 
 // Grouping together
-dogs.forEach(dog => {
-  console.groupCollapsed(`${dog.name}`);
-  console.log(`This is ${dog.name}`);
-  console.log(`${dog.name} is ${dog.age} years old`);
-  console.log(`${dog.name} is ${dog.age * 7} years old`);
-  console.groupEnd(`${dog.name}`);
+cats.forEach(cat => {
+  console.groupCollapsed(`${cat.name}`);
+  console.log(`This is ${cat.name}`);
+  console.log(`${cat.name} is ${cat.age} years old`);
+  console.log(`${cat.name} is ${((cat.age - 2) * 4) + 25} years old`);
+  console.groupEnd(`${cat.name}`);
 });
 
 // counting
@@ -69,4 +67,4 @@ fetch('https://api.github.com/users/wesbos')
   });
 
 //table
-console.table(dogs);
+console.table(cats);
