@@ -4,14 +4,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Demo page of Javascript30 course" />
-	<meta name="keywords" content="html, css, javascript, es6" />
-	<meta name="author" content="Alice G Herbison" />
-	<title>Javascript30</title>
+	<meta name="description" content="{{ .Site.Params.description }}" />
+	<meta name="keywords" content="{{ .Site.Params.keywords }}" />
+	<meta name="author" content="{{ .Site.Params.author }}" />
+	<title>{{ .Title }} - ●○ {{ .Site.Title }}</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+	{{ block "header" . }}{{ end }}
 	{{ block "main" . }}{{ end }}
 </body>
 </html>

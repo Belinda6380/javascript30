@@ -1,0 +1,24 @@
+{{ define "header" }}
+<header>
+	{{ .Content }}
+	
+</header>
+{{ end }}
+{{ define "main" }}
+<main>
+	<ul class="exercises">
+		{{ range .Pages }}
+		<li>
+			<h2>Day {{ .Params.day | strings.TrimLeft "0" }}: {{ .Title }}</h2>
+			<a href="{{ .Permalink }}"><img src="img/day{{ .Params.day }}.png" class="preview" alt="{{ .Params.screenshot }}" /></a>
+			<ul class="links">
+				<li><a href="{{ .Permalink }}">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day{{ .Params.day }}">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			{{ .Content }}				
+		</li>
+		{{ end }}
+	</ul>
+</main>
+{{ end }}

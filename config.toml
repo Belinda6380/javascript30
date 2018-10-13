@@ -1,3 +1,10 @@
 baseURL = "https://alicegherbison.github.io/javascript30"
-languageCode = "en-us"
+languageCode = "en"
 title = "Javascript30"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+publishDir = "docs"
+
+[params]
+	auther = "Alice G Herbison"
+	description = "Demo site of Javascript30 course"
+	keywords = "html, css, javascript, es6"
