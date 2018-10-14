@@ -1,7 +1,7 @@
 +++
 title = "Drum kit 🎼"
 type = "demo"
-layout = "day01"
+layout = "single"
 day = "01"
 screenshot = "Drum kit"
 +++
