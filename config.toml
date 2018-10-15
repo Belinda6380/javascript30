@@ -1,4 +1,4 @@
-baseURL = "https://alicegherbison.github.io/javascript30"
+baseURL = ""
 languageCode = "en"
 title = "Javascript30"
 disableKinds = ["taxonomy", "taxonomyTerm"]
