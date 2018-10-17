@@ -1,5 +1,5 @@
 {{ define "main" }}
 {{ $day := .Params.Day }}
-{{ $day }}
-{{ slice "day" $day ".html" }}
+{{ $partial := (delimit (slice "demo/day" $day ".html") "") }}
+{{ partial (string $partial) . }}
 {{ end }}

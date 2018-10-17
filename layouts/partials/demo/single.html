@@ -1,9 +1,0 @@
-{{ define "main" }}
-{{ $day := .Params.Day }}
-{{ $day }}
-{{ delimit (slice "day" $day ".html") }}
-{{ $scratch := newScratch }}
-{{ $scratch.Add "greetings" "Hello" }}
-{{ $scratch.Add "greetings" "Welcome" }}
-{{ $scratch.Get "greetings" }}
-{{ end }}
