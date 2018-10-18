@@ -1,5 +1,8 @@
+{{ define "css" }}
+{{ partial "demo/css.html" . }}
+{{ end }}
 {{ define "main" }}
-{{ $day := .Params.Day }}
-{{ $partial := (delimit (slice "demo/day" $day ".html") "") }}
-{{ partial (string $partial) . }}
+{{ partial (string (delimit (slice "demo/day" .Params.Day ".html") "")) . }}
+{{ end }}
+{{ define "js" }}
 {{ end }}

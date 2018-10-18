@@ -1,3 +1,1 @@
-{{ $day := .Params.Day }}
-{{ $css := (delimit (slice "day" $day ".css") "") }}
-<link rel="stylesheet" href="{{ $css | absURL }}" type="text/css" />
+<link rel="stylesheet" href="{{ (delimit (slice "css/day" .Params.Day ".css") "") | absURL }}" type="text/css" />
