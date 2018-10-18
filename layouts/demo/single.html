@@ -5,4 +5,5 @@
 {{ partial (string (delimit (slice "demo/day" .Params.Day ".html") "")) . }}
 {{ end }}
 {{ define "js" }}
+{{ partial "demo/js.html" . }}
 {{ end }}
