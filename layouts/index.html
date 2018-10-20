@@ -6,7 +6,7 @@
 {{ define "main" }}
 <main>
 	<ul class="exercises">
-		{{ range .Pages }}
+		{{ range (.Pages.ByParam "day") }}
 		<li>
 			<h2>Day {{ .Params.day | strings.TrimLeft "0" }}: {{ .Title }}</h2>
 			<a href="{{ .Permalink }}"><img src="{{ (delimit (slice "img/day" .Params.Day ".png") "") | absURL }}" class="preview" alt="{{ .Params.screenshot }}" /></a>
