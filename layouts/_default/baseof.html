@@ -8,9 +8,8 @@
 	<meta name="keywords" content="{{ .Site.Params.keywords }}" />
 	<meta name="author" content="{{ .Site.Params.author }}" />
 	<title>{{ .Title }} - ●○ {{ .Site.Title }}</title>
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	{{ $mainCSS := "css/main.css" }}
-	<link rel="stylesheet" href="{{ $mainCSS | absURL }}" type="text/css" />
+	<link rel="icon" href="{{ "favicon.ico" | absURL }}" type="image/x-icon" />	
+	<link rel="stylesheet" href="{{ "css/main.css" | absURL }}" type="text/css" />
 	{{ block "css" . }}{{ end }}
 </head>
 <body>
