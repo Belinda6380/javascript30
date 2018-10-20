@@ -1,0 +1,290 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  display:flex;
+  flex:1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 10px solid black;
+  background: #ffffff;
+  border-radius:50%;
+  margin:50px auto;
+  position: relative;
+  padding: 1.2rem;
+  box-shadow:
+  1px -1px 0 1px rgba(124,124,124,255),
+  inset -15px 8px 5px 5px rgba(185,185,185,255);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.centre-support {
+  width: 14rem;
+  height: 14rem;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 27%;
+  left: 27%;
+  box-shadow: -10px 7px 5px 1px rgba(185,185,185,255);
+}
+
+.hand {
+  height:3px;
+  position: absolute;
+  top:50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58 ,1);
+}
+
+.hour-hand {
+  width: 5rem;
+  left: calc(50% - 5rem);
+  background:rgba(212,185,165,255);
+}
+
+.hour-hand::after {
+  width: 1.3rem;
+  height: 3px;
+  display: block;
+  position: absolute;
+  content: "";
+  background:rgba(212,185,165,255);
+  top: 0;
+  left: 5rem;
+}
+
+.min-hand {
+  width: 7rem;
+  left: calc(50% - 7rem);
+  background:rgba(187,147,122,255);
+}
+
+.min-hand::after {
+  width: 1.3rem;
+  height: 3px;
+  display: block;
+  content: "";
+  background:rgba(187,147,122,255);
+  position: absolute;
+  top: 0px;
+  left: 7rem;
+  box-shadow: -1px 1px 1px 1px rgba(60,60,60,255);
+}
+
+.second-hand {
+  width: 3rem;
+  left: calc(50% - 3rem + 1px);
+  background-image:linear-gradient(120deg, rgba(120,120,120,255), rgba(200,200,200,255));
+}
+
+.second-hand::after {
+  width: 1.3rem;
+  height: 3px;
+  display: block;
+  position: absolute;
+  content: "";
+  background:rgba(120,120,120,255);
+  top: 0;
+  left: 3rem;
+}
+
+.hour-circle {
+  background: #ffffff;
+  width: 73%;
+  height: 73%;
+  border-radius: 50%;
+  position: absolute;
+  top: 14%;
+  left: 14%;
+}
+
+.minutes-circle {
+  background: #ffffff;
+  width: 93%;
+  height: 93%;
+  border-radius: 50%;
+  position: absolute;
+  top: 3.9%;
+  left: 3.9%;
+}
+
+.hand-circle {
+  position: absolute;
+  border-radius:50%;
+  background-image:linear-gradient(120deg, rgba(187,147,122,255), rgba(212,185,165,255));
+  width: 8px;
+  height: 8px;
+  top: calc(50% - 4px);
+  left: calc(50% - 4px);
+}
+
+.centre-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: #000000;
+  width: 3px;
+  height: 3px;
+  top: calc(50% - 1px);
+  left: calc(50% - 1px);
+  box-shadow: -1px 1px 1px 0px rgba(60,60,60,255);
+}
+
+.noon-six, .one-seven, .two-eight, .three-nine, .four-ten, .five-eleven {
+  width: 100%;
+  height: 4px;
+  background: #000000;
+  position: absolute;
+  top: 50%;
+}
+
+.noon-six {
+  transform: rotate(90deg);
+}
+
+.one-seven {
+  transform: rotate(300deg);
+}
+
+.two-eight {
+  transform: rotate(330deg);
+}
+
+.four-ten {
+  transform: rotate(30deg);
+}
+
+.five-eleven {
+  transform: rotate(60deg);
+}
+
+.one-thirtyone, .two-thirtytwo, .three-thirtythree, .four-thirtyfour, .six-thirtysix, .seven-thirtyseven, .eight-thirtyeight, .nine-thirtynine, .eleven-fourtyone, .twelve-fourtytwo, .thirteen-fourtythree, .fourteen-fourtyfour, .sixteen-fourtysix, .seventeen-fourtyseven, .eighteen-fourtyeight, .nineteen-fourtynine, .twentyone-fiftyone, .twentytwo-fiftytwo, .twentythree-fiftythree, .twentyfour-fiftyfour, .twentysix-fiftysix, .twentyseven-fiftyseven, .twentyeight-fiftyeight, .twentynine-fiftynine {
+  width: 100%;
+  height: 2px;
+  background: rgba(201,201,201,255);
+  position: absolute;
+  top: 50.25%;
+}
+
+.one-thirtyone {
+  transform: rotate(276deg);
+  background-image:linear-gradient(90deg, rgba(201,201,201,255) 98%,rgba(140,140,140,255));
+}
+
+.two-thirtytwo {
+  transform: rotate(282deg);
+  background-image:linear-gradient(90deg, rgba(201,201,201,255) 97%,rgba(140,140,140,255));
+}
+
+.three-thirtythree {
+  transform: rotate(288deg);
+  background-image:linear-gradient(90deg, rgba(201,201,201,255) 96%,rgba(140,140,140,255));
+}
+
+.four-thirtyfour {
+  transform: rotate(294deg);
+  background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
+}
+
+.six-thirtysix, .seven-thirtyseven, .eight-thirtyeight, .nine-thirtynine, .eleven-fourtyone, .twelve-fourtytwo, .thirteen-fourtythree, .fourteen-fourtyfour {
+  background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
+}
+
+.six-thirtysix {
+  transform: rotate(306deg);
+}
+
+.seven-thirtyseven {
+  transform: rotate(312deg);
+}
+
+.eight-thirtyeight {
+  transform: rotate(318deg);
+}
+
+.nine-thirtynine {
+  transform: rotate(324deg);
+}
+
+.eleven-fourtyone {
+  transform: rotate(336deg);
+}
+
+.twelve-fourtytwo {
+  transform: rotate(342deg);
+}
+
+.thirteen-fourtythree {
+  transform: rotate(348deg);
+}
+
+.fourteen-fourtyfour {
+  transform: rotate(354deg);
+}
+
+.sixteen-fourtysix {
+  transform: rotate(6deg);
+  background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
+}
+
+.seventeen-fourtyseven {
+  transform: rotate(12deg);
+  background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
+}
+
+.eighteen-fourtyeight {
+  transform: rotate(18deg);
+  background-image:linear-gradient(90deg, rgba(201,201,201,255) 97%,rgba(140,140,140,255));
+}
+
+.nineteen-fourtynine {
+  transform: rotate(24deg);
+  background-image:linear-gradient(90deg, rgba(201,201,201,255) 98%,rgba(140,140,140,255));
+}
+
+.twentyone-fiftyone {
+  transform: rotate(36deg);
+  background-image:linear-gradient(90deg, rgba(201,201,201,255) 99%,rgba(140,140,140,255));
+}
+
+.twentytwo-fiftytwo {
+  transform: rotate(42deg);
+}
+
+.twentythree-fiftythree {
+  transform: rotate(48deg);
+}
+
+.twentyfour-fiftyfour {
+  transform: rotate(54deg);
+}
+
+.twentysix-fiftysix {
+  transform: rotate(66deg);
+}
+
+.twentyseven-fiftyseven {
+  transform: rotate(72deg);
+}
+
+.twentyeight-fiftyeight {
+  transform: rotate(78deg);
+}
+
+.twentynine-fiftynine {
+  transform: rotate(84deg);
+}
