@@ -142,8 +142,8 @@ a:hover {
 	cursor: e-resize;
 }
 
-a[href^="http://"]:not([href*="github.com"]):hover,
-a[href^="https://"]:not([href*="github.com"]):hover {
+a[href^="http://"]:not([href*="github.io"]):hover,
+a[href^="https://"]:not([href*="github.io"]):hover {
     cursor: ne-resize;
     color: #1faa22;
 }
