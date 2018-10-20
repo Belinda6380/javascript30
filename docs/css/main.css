@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* document */
+html {
+	font-size: 62.5%;
+}
+
+/* sectioning & structuring */
+body {
+	font-family: serif;
+	border-top: 8px solid #000;
+	font-size: 1.8rem;
+	line-height: 1.8;
+}
+
+header, main {
+	max-width: 470px;
+	padding: 0 1.8rem;
+}
+
+header {
+	margin: 1.8rem auto 0 auto;
+}
+
+main {
+	margin: 4rem auto;
+}
+
+/* headings */
+h1 {
+	font-weight: bold;
+	font-size: 4rem;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 2.4rem;
+	margin-top: 1.8rem;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 2.1rem;
+	margin-top: 1.8rem;
+}
+
+/* text & lists */
+p, ul, ol {
+	margin-top: 1.8rem;
+}
+
+h1:first-child, h2:first-child, p:first-child, ol:first-child, ul:first-child, li:first-child {
+	margin-top: 0;
+}
+
+ul {
+	list-style: circle inside;
+}
+
+ol {
+	list-style: decimal inside;
+}
+
+li {
+margin-top: 0.8rem;
+}
+
+ul.exercises {
+	list-style: none;
+}
+
+ul.exercises > li:not(first-child) {
+	margin-top: 3rem;
+}
+
+ul.links {
+	list-style: none;
+	text-align: center;
+}
+
+ul.links li {
+	display: inline;
+	margin: 0 1.8rem;
+}
+
+/* phrasing */
+a {
+	font-weight: bold;
+	color: #1c56dd;
+}
+
+a:hover {
+	color: #1c56dd;
+	text-decoration: none;
+	cursor: e-resize;
+}
+
+a[href^="http://"]:not([href*="github.io"]):hover,
+a[href^="https://"]:not([href*="github.io"]):hover {
+    cursor: ne-resize;
+    color: #1faa22;
+}
+
+header a:hover {
+	cursor: w-resize;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+code {
+	font-family: monospace;
+	background-color: #eff0f1;
+}
+
+p code, li code {
+	padding: 1px 5px;
+}
+
+img.preview {
+	width: 100%;
+	display: block;
+	outline: 10px solid #ffee00;
+	margin-top: 1.8rem;
+}
+
+a img:hover {
+	outline: 10px solid #10F0F0;
+}
+
+/* misc */
+:lang(ko){
+font-family: sans-serif;
+}
+
+::selection {
+background-color: #ffee00;
+color: #000000;
+text-shadow: none;
+}

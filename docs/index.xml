@@ -1,14 +1,95 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>home on Javascript30</title>
+    <title>Overview on Javascript30</title>
     <link>https://alicegherbison.github.io/javascript30/</link>
-    <description>Recent content in home on Javascript30</description>
+    <description>Recent content in Overview on Javascript30</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
 	<atom:link href="https://alicegherbison.github.io/javascript30/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AJAX type ahead 🔮</title>
+      <link>https://alicegherbison.github.io/javascript30/day06/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day06/</guid>
+      <description> fetch() method Javascript promises ES6 spreads changes events only fire when you go off the element RegExp()&amp;#39;&amp;#39; object global and insensitive flags for regex objects  </description>
+    </item>
+    
+    <item>
+      <title>Array cardio I 💪</title>
+      <link>https://alicegherbison.github.io/javascript30/day04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day04/</guid>
+      <description>all the array functions like filter, sort etc console.table() function slightly more clarity around arrow/inline functions &amp;amp; ternery operators .map() will always return the same number of array items that it takes in template strings  This was a very light introduction to array methods and I don&amp;rsquo;t think I fully grasp them yet.</description>
+    </item>
+    
+    <item>
+      <title>Array cardio II 💪💪</title>
+      <link>https://alicegherbison.github.io/javascript30/day07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day07/</guid>
+      <description>putting curly brackets round a variable in console.log() shows the name of the value  This challenge was completely filled with new array methods. I think it will be useful to return to in the future as a reference. Again the ES6 syntax was a little hard to grasp.</description>
+    </item>
+    
+    <item>
+      <title>Console tricks ✨</title>
+      <link>https://alicegherbison.github.io/javascript30/day09/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day09/</guid>
+      <description>string interpolation debugging/pausing using the console passing in arguments to console.log() to style the text in the console console.warn() console.error() console.info() console.assert() console.dir() console.group()&amp;rdquo;, console.groupCollapse()  Right at the end of this one was a brief look at fetching data from an API. I want to explore that further in a personal project.</description>
+    </item>
+    
+    <item>
+      <title>Drum kit 🎼</title>
+      <link>https://alicegherbison.github.io/javascript30/day01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day01/</guid>
+      <description>&amp;lt;kbd&amp;gt; element exists for keyboard input transition events and their objects that there are functions and properties available for specific elements e.g. .play(); and .currentTime  It also took me a little while to realise that the numerical value of the data-key attribute on the &amp;lt;div&amp;gt; and &amp;lt;audio&amp;gt; elements isn&amp;rsquo;t technically the same thing as the keyCode value generated from the keyDown event - they&amp;rsquo;re just the same number being used to link the two together.</description>
+    </item>
+    
+    <item>
+      <title>Flex panels image gallery 🌄</title>
+      <link>https://alicegherbison.github.io/javascript30/day05/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day05/</guid>
+      <description>more handling of event objects e.propertyName.includes(&amp;#39;&amp;#39;) check  I really like the practical applications of these small transition effects. This was another quite fast-paced tutorial but lays the ground for lots of fun ideas for animation page items.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 canvas 🎨</title>
+      <link>https://alicegherbison.github.io/javascript30/day08/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day08/</guid>
+      <description>the context is what is drawn on, and this can be 2D or 3D ES6 functions can be inline or block&amp;lt;  Loved this one.</description>
+    </item>
+    
+    <item>
+      <title>JS &#43; CSS clock 🕙</title>
+      <link>https://alicegherbison.github.io/javascript30/day02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day02/</guid>
+      <description>transform-origin CSS property transition-timing-function CSS property and the cubic bezier explorer tool in Google Chrome Developer Tools setInterval() function Date object getSeconds(), getMinutes(), getHours() functions CSS gradients  I reskinned the provided clock to match a real one sold on Trouva and am very happy with the result.</description>
+    </item>
+    
+    <item>
+      <title>Scoped CSS variables &amp; JS 🔅🔆</title>
+      <link>https://alicegherbison.github.io/javascript30/day03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day03/</guid>
+      <description>filter CSS property NodeList forEach() method change event a dataset object is an object that contains all the data attributes from a particular element  The solution to this day&amp;rsquo;s challenge was simple, but required previous knowledge of ES6 syntax and methods so the learning curve was a little steep.</description>
+    </item>
     
   </channel>
 </rss>

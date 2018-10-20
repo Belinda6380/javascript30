@@ -5,17 +5,205 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Demo page of Javascript30 course" />
+	<meta name="description" content="Demo site of Javascript30 course" />
 	<meta name="keywords" content="html, css, javascript, es6" />
-	<meta name="author" content="Alice G Herbison" />
-	<title>Javascript30</title>
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.css" />
+	<meta name="author" content="" />
+	<title>Overview - ●○ Javascript30</title>
+	<link rel="icon" href="https://alicegherbison.github.io/javascript30/favicon.ico" type="image/x-icon" />	
+	<link rel="stylesheet" href="https://alicegherbison.github.io/javascript30/css/main.css" type="text/css" />
+	
 </head>
 <body>
 	
-<p>hello</p>
+<header>
+	
 
+<h1 id="javascript30">Javascript30</h1>
 
-</body>
+<p>Demo page and learnings from the 30 Javascript exercises in the <a href="https://javascript30.com">Javascript30</a> course from <a href="https://wesbos.com">Wes Bos</a>. No compilers, no frameworks, no libraries - just vanilla Javascript.</p>
+
+<p>By <a href="https://www.alicegherbison.com">Alice</a>.</p>
+
+</header>
+
+	
+<main>
+	<ul class="exercises">
+		
+		<li>
+			<h2>Day 1: Drum kit 🎼</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day01/"><img src="https://alicegherbison.github.io/javascript30/img/day01.png" class="preview" alt="Drum kit" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day01/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day01">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li><code>&lt;kbd&gt;</code> element exists for keyboard input</li>
+<li>transition events and their objects</li>
+<li>that there are functions and properties available for specific elements e.g. <code>.play();</code> and <code>.currentTime</code></li>
+</ul>
+
+<p>It also took me a little while to realise that the numerical value of the <code>data-key</code> attribute on the <code>&lt;div&gt;</code> and <code>&lt;audio&gt;</code> elements isn&rsquo;t technically the same <em>thing</em> as the <code>keyCode</code> value generated from the <code>keyDown</code> event - they&rsquo;re just the same number being used to link the two together.</p>
+				
+		</li>
+		
+		<li>
+			<h2>Day 2: JS &#43; CSS clock 🕙</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day02/"><img src="https://alicegherbison.github.io/javascript30/img/day02.png" class="preview" alt="Clock" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day02/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day02">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li><code>transform-origin</code> CSS property</li>
+<li><code>transition-timing-function</code> CSS property and the cubic bezier explorer tool in Google Chrome Developer Tools</li>
+<li><code>setInterval()</code> function</li>
+<li><code>Date</code> object</li>
+<li><code>getSeconds()</code>, <code>getMinutes()</code>, <code>getHours()</code> functions</li>
+<li>CSS gradients</li>
+</ul>
+
+<p>I reskinned the provided clock to match a <a href="https://www.trouva.com/products/nordal-station-clock">real one sold on Trouva</a> and am very happy with the result.</p>
+				
+		</li>
+		
+		<li>
+			<h2>Day 3: Scoped CSS variables &amp; JS 🔅🔆</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day03/"><img src="https://alicegherbison.github.io/javascript30/img/day03.png" class="preview" alt="Picture with edit functions" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day03/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day03">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li><code>filter</code> CSS property</li>
+<li>NodeList <code>forEach()</code> method</li>
+<li>change event</li>
+<li>a dataset object is an object that contains all the data attributes from a particular element</li>
+</ul>
+
+<p>The solution to this day&rsquo;s challenge was simple, but required previous knowledge of ES6 syntax and methods so the learning curve was a little steep.</p>
+				
+		</li>
+		
+		<li>
+			<h2>Day 4: Array cardio I 💪</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day04/"><img src="https://alicegherbison.github.io/javascript30/img/day04.png" class="preview" alt="Console output" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day04/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day04">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li>all the array functions like <code>filter</code>, <code>sort</code> etc</li>
+<li><code>console.table()</code> function</li>
+<li>slightly more clarity around arrow/inline functions &amp; ternery operators</li>
+<li><code>.map()</code> will always return the same number of array items that it takes in</li>
+<li>template strings</li>
+</ul>
+
+<p>This was a very light introduction to array methods and I don&rsquo;t think I fully grasp them yet.</p>
+				
+		</li>
+		
+		<li>
+			<h2>Day 5: Flex panels image gallery 🌄</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day05/"><img src="https://alicegherbison.github.io/javascript30/img/day05.png" class="preview" alt="Expanding panels" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day05/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day05">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li>more handling of event objects</li>
+<li><code>e.propertyName.includes(&#39;&#39;)</code> check</li>
+</ul>
+
+<p>I really like the practical applications of these small transition effects. This was another quite fast-paced tutorial but lays the ground for lots of fun ideas for animation page items.</p>
+				
+		</li>
+		
+		<li>
+			<h2>Day 6: AJAX type ahead 🔮</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day06/"><img src="https://alicegherbison.github.io/javascript30/img/day06.png" class="preview" alt="Search box" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day06/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day06">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li><code>fetch()</code> method</li>
+<li>Javascript promises</li>
+<li>ES6 spreads</li>
+<li>changes events only fire when you go off the element</li>
+<li><code>RegExp()&#39;&#39;</code> object</li>
+<li>global and insensitive flags for regex objects</li>
+</ul>
+				
+		</li>
+		
+		<li>
+			<h2>Day 7: Array cardio II 💪💪</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day07/"><img src="https://alicegherbison.github.io/javascript30/img/day07.png" class="preview" alt="Console output" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day07/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day07">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li>putting curly brackets round a variable in <code>console.log()</code> shows the name of the value</li>
+</ul>
+
+<p>This challenge was completely filled with new array methods. I think it will be useful to return to in the future as a reference. Again the ES6 syntax was a little hard to grasp.</p>
+				
+		</li>
+		
+		<li>
+			<h2>Day 8: HTML5 canvas 🎨</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day08/"><img src="https://alicegherbison.github.io/javascript30/img/day08.png" class="preview" alt="Console output" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day08/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day08">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li>the context is what is drawn on, and this can be 2D or 3D</li>
+<li>ES6 functions can be inline or block&lt;</li>
+</ul>
+
+<p>Loved this one.</p>
+				
+		</li>
+		
+		<li>
+			<h2>Day 9: Console tricks ✨</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day09/"><img src="https://alicegherbison.github.io/javascript30/img/day09.png" class="preview" alt="Console output" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day09/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day09">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li>string interpolation</li>
+<li>debugging/pausing using the console</li>
+<li>passing in arguments to <code>console.log()</code> to style the text in the console</li>
+<li><code>console.warn()</code></li>
+<li><code>console.error()</code></li>
+<li><code>console.info()</code></li>
+<li><code>console.assert()</code></li>
+<li><code>console.dir()</code></li>
+<li><code>console.group()</code>&rdquo;, <code>console.groupCollapse()</code></li>
+</ul>
+
+<p>Right at the end of this one was a brief look at fetching data from an API. I want to explore that further in a personal project.</p>
+				
+		</li>
+		
+	</ul>
+</main>
+
+	
+</body> 
 </html>
