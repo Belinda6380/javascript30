@@ -1,9 +1,9 @@
 {{ define "css" }}
-{{ partial "demo/css.html" . }}
+{{ partial "tags/link-css-demo.html" . }}
 {{ end }}
 {{ define "main" }}
 {{ partial (string (delimit (slice "demo/day" .Params.Day ".html") "")) . }}
 {{ end }}
 {{ define "js" }}
-{{ partial "demo/js.html" . }}
+{{ partial "tags/script-js-demo.html" . }}
 {{ end }}
