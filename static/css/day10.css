@@ -1,12 +1,11 @@
 html {
-  font-family: sans-serif;
-  background:#ffc600;
+  background:#dd1c90;
 }
 
 .inbox {
   max-width:400px;
   margin:50px auto;
-  background:white;
+  background:#ffffff;
   border-radius:5px;
   box-shadow:10px 10px 0 rgba(0,0,0,0.1);
 }
@@ -14,7 +13,7 @@ html {
 .item {
   display:flex;
   align-items:center;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 .item:last-child {
@@ -36,8 +35,5 @@ p {
   padding:20px;
   transition:background 0.2s;
   flex:1;
-  font-family:'helvetica neue';
-  font-size: 20px;
-  font-weight: 200;
-  border-left: 1px solid #D1E2FF;
+  border-left: 1px solid rgb(170, 170, 170);
 }
