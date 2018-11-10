@@ -74,6 +74,15 @@
     </item>
     
     <item>
+      <title>Hold shift to check multiple checkboxes ☑️</title>
+      <link>https://alicegherbison.github.io/javascript30/day10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day10/</guid>
+      <description>Input Checkbox checked Property and how to set it  The logic to this one was really clever. The event objects have more capability than I realised, and being able to set checkboxes to checked via Javascript is easier than expected.</description>
+    </item>
+    
+    <item>
       <title>JS &#43; CSS clock 🕙</title>
       <link>https://alicegherbison.github.io/javascript30/day02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
