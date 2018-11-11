@@ -5,6 +5,11 @@ const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
+const volume = player.querySelector('[name=volume]');
+const sound = player.querySelector('.sound');
+
+let volumeValue = volume.value;
+console.log(volume.value);
 
 function togglePlay() {
   if (video.paused){
@@ -25,9 +30,7 @@ function skip(){
 
 function handleRangeUpdate(e){
   video[this.name] = this.value;
-  console.log(this.name);
-  console.log(this.value);
-}
+  }
 
 function handleProgress() {
   const percent = (video.currentTime / video.duration) * 100;
@@ -37,6 +40,19 @@ function handleProgress() {
 function scrub(e){
   const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = scrubTime;
+}
+
+function toggleSound() {
+  video.muted = !video.muted;
+  toggleSoundIcon();
+}
+
+function toggleSoundIcon() {
+  if (video.muted) {
+    sound.textContent = "🔇";
+  } else {
+    sound.textContent = "🔉";
+  }
 }
 
 video.addEventListener('click', togglePlay);
@@ -53,3 +69,5 @@ progress.addEventListener('click', scrub);
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
+
+sound.addEventListener('click', toggleSound);
