@@ -217,6 +217,31 @@
 				
 		</li>
 		
+		<li>
+			<h2>Day 11: Custom HTML5 video player 📺</h2>
+			<a href="https://alicegherbison.github.io/javascript30/day11/"><img src="https://alicegherbison.github.io/javascript30/img/day11.png" class="preview" alt="Video player" /></a>
+			<ul class="links">
+				<li><a href="https://alicegherbison.github.io/javascript30/day11/">Demo</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day11">Github</a></li>
+			</ul>
+			<h3>Learnings</h3>
+			<ul>
+<li><code>:fullscreen</code> pseudo class</li>
+<li><code>step</code> attribute for slider elements</li>
+<li>That you can call <code>querySelector()</code> on node/object variables</li>
+<li><code>video</code> element <code>paused</code> property</li>
+<li>Accessing data attributes with <code>dataset</code></li>
+<li><code>parseFloat()</code> method</li>
+<li><code>timeupdate</code> video event</li>
+<li>Using ES6 function arrow notation to check if a variable is set to true before continuing running the function</li>
+</ul>
+
+<p>While still a bit iffy on arrow functions (and it&rsquo;s clear that&rsquo;s an area I need to revise in-depth), I was able to build out additional functionality with a mute button. The button uses a little speaker emoji to indicate the status of the mute, and is linked to the adjacent volume slider which also mutes when it reaches zero while saving its current state. I found this challenging at first, before realising the video&rsquo;s volume remains at its value, regardless of the video&rsquo;s mute status.</p>
+
+<p>I also added a restart playback button.</p>
+				
+		</li>
+		
 	</ul>
 </main>
 

@@ -47,6 +47,15 @@
     </item>
     
     <item>
+      <title>Custom HTML5 video player 📺</title>
+      <link>https://alicegherbison.github.io/javascript30/day11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day11/</guid>
+      <description>:fullscreen pseudo class step attribute for slider elements That you can call querySelector() on node/object variables video element paused property Accessing data attributes with dataset parseFloat() method timeupdate video event Using ES6 function arrow notation to check if a variable is set to true before continuing running the function  While still a bit iffy on arrow functions (and it&amp;rsquo;s clear that&amp;rsquo;s an area I need to revise in-depth), I was able to build out additional functionality with a mute button.</description>
+    </item>
+    
+    <item>
       <title>Drum kit 🎼</title>
       <link>https://alicegherbison.github.io/javascript30/day01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
