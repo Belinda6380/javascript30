@@ -4,12 +4,10 @@ const progress = player.querySelector('.progress');
 const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
-const ranges = player.querySelectorAll('.player__slider');
-const volume = player.querySelector('[name=volume]');
+const volumeRange = player.querySelector('[name=volume]');
+const speedRange = player.querySelector('[name=playbackRate]');
 const sound = player.querySelector('.sound');
-
-let volumeValue = volume.value;
-console.log(volume.value);
+const restart = player.querySelector('.restart');
 
 function togglePlay() {
   if (video.paused){
@@ -28,9 +26,19 @@ function skip(){
   video.currentTime += parseFloat(this.dataset.skip);
 }
 
-function handleRangeUpdate(e){
-  video[this.name] = this.value;
+function handleVolumeUpdate(e){
+  video.volume = this.value;
+  if (video.volume > 0){
+    video.muted = false;
+  } else {
+    video.muted = true;
   }
+  toggleSoundIcon();
+}
+
+function handleSpeedUpdate(e){
+  video.playbackRate = this.value;
+}
 
 function handleProgress() {
   const percent = (video.currentTime / video.duration) * 100;
@@ -43,7 +51,13 @@ function scrub(e){
 }
 
 function toggleSound() {
-  video.muted = !video.muted;
+  if (volumeRange.value > 0){
+    video.muted = true;
+    volumeRange.value = 0;
+  } else {
+    video.muted = false;
+    volumeRange.value = video.volume;
+  }
   toggleSoundIcon();
 }
 
@@ -55,19 +69,32 @@ function toggleSoundIcon() {
   }
 }
 
+function restartVideo() {
+  video.currentTime = 0;
+}
+
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
+
 toggle.addEventListener('click', togglePlay);
+
 skipButtons.forEach(button => button.addEventListener('click', skip));
-ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
-ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
+
+volumeRange.addEventListener('change', handleVolumeUpdate);
+volumeRange.addEventListener('mousemove', handleVolumeUpdate);
+
+speedRange.addEventListener('change', handleSpeedUpdate);
+speedRange.addEventListener('mousemove', handleSpeedUpdate);
 
 let mousedown = false;
+
 progress.addEventListener('click', scrub);
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
 
 sound.addEventListener('click', toggleSound);
+
+restart.addEventListener('click', restartVideo);
