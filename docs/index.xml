@@ -101,6 +101,16 @@
     </item>
     
     <item>
+      <title>Key sequence detection 🔍</title>
+      <link>https://alicegherbison.github.io/javascript30/day12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day12/</guid>
+      <description>join() method to convert arrays to strings includes() method  The splice calcuation blew my mind a little. I don&amp;rsquo;t think I could have figured out how to calculate/return the user&amp;rsquo;s typed input on my own.
+(The secret code to type is &amp;lsquo;unicorn&amp;rsquo;).</description>
+    </item>
+    
+    <item>
       <title>Scoped CSS variables &amp; JS 🔅🔆</title>
       <link>https://alicegherbison.github.io/javascript30/day03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
