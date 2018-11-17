@@ -1,15 +1,5 @@
 html {
-  box-sizing: border-box;
-  background:#ffc600;
-  font-family:'helvetica neue';
-  font-size: 20px;
-  font-weight: 200;
-}
-body {
-  margin: 0;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+  background:#9940ff;
 }
 
 h1 {
@@ -18,7 +8,7 @@ h1 {
 
 .site-wrap {
   max-width: 700px;
-  margin: 100px auto;
+  margin: 50px auto;
   background:white;
   padding:40px;
   text-align: justify;
