@@ -6,4 +6,6 @@ day = "15"
 screenshot = ""
 +++
 
-* sfsdf
+* {{< code "submit" >}} event listener
+* ES6 shorthand for assigning object properties
+* Form elements {{< code "reset()" >}} method
