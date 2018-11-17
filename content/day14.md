@@ -3,7 +3,7 @@ title = "References vs copying 👥"
 type = "demo"
 layout = "single"
 day = "14"
-screenshot = ""
+screenshot = "Console output"
 +++
 
 * If you update an referenced array or object it will always reference back to the original
