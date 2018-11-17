@@ -111,6 +111,15 @@
     </item>
     
     <item>
+      <title>References vs copying 👥</title>
+      <link>https://alicegherbison.github.io/javascript30/day14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day14/</guid>
+      <description> If you update an referenced array or object it will always reference back to the original Empty slice() method with no arguments returns a copy of all the array data, concat() and ES6 spread work similarly Using assign() creates a copy for objects, but only 1 level deep Using JSON.parse() and JSON.clone() can make a deep copy but isn&amp;rsquo;t recommended  </description>
+    </item>
+    
+    <item>
       <title>Scoped CSS variables &amp; JS 🔅🔆</title>
       <link>https://alicegherbison.github.io/javascript30/day03/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
