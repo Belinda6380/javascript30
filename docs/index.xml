@@ -119,5 +119,14 @@
       <description>filter CSS property NodeList forEach() method change event a dataset object is an object that contains all the data attributes from a particular element  The solution to this day&amp;rsquo;s challenge was simple, but required previous knowledge of ES6 syntax and methods so the learning curve was a little steep.</description>
     </item>
     
+    <item>
+      <title>Slide in on scroll 🔜</title>
+      <link>https://alicegherbison.github.io/javascript30/day13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day13/</guid>
+      <description>scroll event listener Performance issues with detecting scroll &amp;amp; the need for debouncing That you can set default function argument values as initial arguments (I think I already knew this but definitely a great refresher/example) window.scrollY and offsetTop properties How to access the height and width of DOM elements  It was really helpful to learn how the different properties of the images and the window can be used to calculate positions and heights.</description>
+    </item>
+    
   </channel>
 </rss>
