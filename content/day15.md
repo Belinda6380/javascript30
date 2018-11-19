@@ -11,3 +11,6 @@ screenshot = ""
 * Form elements {{< code "reset()" >}} method
 * {{< code "localStorage" >}} converts things to strings
 * That you can use OR operators in variable assignments
+* Event delegation
+* {{< code "e.target" >}}
+* {{< code "matches()" >}} method from the browser API
