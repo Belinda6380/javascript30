@@ -13,10 +13,6 @@ body{
   border: 0;
 }
 
-p {
-  margin-bottom: 20px;
-}
-
 svg {
   fill:white;
   background: rgba(0,0,0,0.1);
@@ -37,6 +33,7 @@ h1 {
   text-align: center;
   margin: 0;
   text-transform: uppercase;
+  line-height: 3rem;
 }
 
 .plates {
