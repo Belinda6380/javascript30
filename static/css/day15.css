@@ -13,13 +13,20 @@ body{
   border: 0;
 }
 
+h1 {
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+
 svg {
   fill:white;
   background: rgba(0,0,0,0.1);
   padding: 20px;
   border-radius: 50%;
   width: 200px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .wrapper {
@@ -27,13 +34,6 @@ svg {
   max-width: 400px;
   background: rgba(255,255,255,1);
   border: 10px solid rgba(0,0,0,1);
-}
-
-h1 {
-  text-align: center;
-  margin: 0;
-  text-transform: uppercase;
-  line-height: 3rem;
 }
 
 .plates {
@@ -47,6 +47,7 @@ h1 {
   border-bottom: 2px solid rgba(0,0,0,1);
   padding: 10px 0;
   display: flex;
+  margin-top: 0;
 }
 
 .plates label {
@@ -70,6 +71,7 @@ h1 {
 
 .add-items {
   margin-top: 20px;
+  display: flex;
 }
 
 .add-items input {
@@ -79,17 +81,14 @@ h1 {
   font-family: serif;
   color: rgba(0,0,0,1);
   flex-grow: 1;
-  font-size: 1.5rem;
+  font-size: 100%;
   letter-spacing: 0.5px;
 }
 
-input[type="submit"] {
+.add-items input[type="submit"] {
   text-transform: uppercase;
   font-weight: bold;
   color: rgba(255,255,255,1);
   background-color: rgba(0,0,0,1);
-}
-
-input[type="text"] {
-  margin-right: 10px;
+  margin-left: 10px;
 }
