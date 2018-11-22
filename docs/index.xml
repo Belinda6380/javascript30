@@ -111,6 +111,15 @@
     </item>
     
     <item>
+      <title>Local storage &amp; event delegation</title>
+      <link>https://alicegherbison.github.io/javascript30/day15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day15/</guid>
+      <description> submit event listener ES6 shorthand for assigning object properties Form elements reset() method localStorage converts things to strings That you can use OR operators in variable assignments Event delegation e.target matches() method from the browser API  </description>
+    </item>
+    
+    <item>
       <title>References vs copying 👥</title>
       <link>https://alicegherbison.github.io/javascript30/day14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
