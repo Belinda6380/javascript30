@@ -3,7 +3,7 @@ title = "Mouse move shadow 🐭"
 type = "demo"
 layout = "single"
 day = "16"
-screenshot = ""
+screenshot = "Text with hovering shadow"
 +++
 
 * {{< code "contenteditable" >}} HTML attribute
