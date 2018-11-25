@@ -3,7 +3,7 @@ title = "Local storage & event delegation"
 type = "demo"
 layout = "single"
 day = "15"
-screenshot = ""
+screenshot = "Food menu order"
 +++
 
 * {{< code "submit" >}} event listener
