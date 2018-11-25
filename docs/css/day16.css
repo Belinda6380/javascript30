@@ -1,0 +1,12 @@
+.hero {
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+}
+
+h1 {
+  font-size: 12rem;
+  text-transform: uppercase;
+}

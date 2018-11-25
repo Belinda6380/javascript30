@@ -120,6 +120,15 @@
     </item>
     
     <item>
+      <title>Mouse move shadow 🐭</title>
+      <link>https://alicegherbison.github.io/javascript30/day16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day16/</guid>
+      <description>contenteditable HTML attribute That you can use document.querySelector() on an element that you&amp;rsquo;ve already selected using it How to adjust for the offset of the target element when hovering over those that are nested within others  This is incredibly clever. Before it started I thought the solution would be simple, but it really isn&amp;rsquo;t and I couldn&amp;rsquo;t have figured out the maths for this! It seems useful for some fun page styling, so glad to know how it&amp;rsquo;s possible.</description>
+    </item>
+    
+    <item>
       <title>References vs copying 👥</title>
       <link>https://alicegherbison.github.io/javascript30/day14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
