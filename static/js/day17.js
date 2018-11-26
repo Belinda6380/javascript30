@@ -1,10 +1,8 @@
-const films = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+const films = ['The Villainess', 'Charlie\'s Angels', 'Constantine', 'The Lake House', 'The Matrix', 'The Addams Family', 'Casper', 'The Orphanage', 'The Secret Garden', 'Metropolis', 'Run Lola Run', 'Brief Encounter', 'Groundhog Day'];
 
 function strip(bandName){
   return bandName.replace(/^(a |the |an)/i, '').trim();
 }
-
-
 
 const sortedFilms = films.sort(function(a,b) {
   if(strip(a) > strip(b)) {
@@ -12,4 +10,9 @@ const sortedFilms = films.sort(function(a,b) {
   } else {
     return -1;
   }
-})
+});
+
+document.querySelector('#films').innerHTML =
+  sortedFilms
+    .map(film => `<li>${film}</li>`)
+    .join('');

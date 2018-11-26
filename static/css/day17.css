@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: sans-serif;
-  background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+  background: url("../img/seoul07.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -9,23 +8,16 @@ body {
 }
 
 #films {
-  list-style: inside square;
-  font-size: 20px;
-  background: white;
-  width: 500px;
+  background: rgba(255, 255, 255, 1);
+  width: 300px;
   margin: auto;
-  padding: 0;
-  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 1);
 }
 #films li {
-  border-bottom: 1px solid #efefef;
-  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  padding: 10px;
 }
 #films li:last-child {
   border-bottom: 0;
-}
-
-a {
-  color: #ffc600;
-  text-decoration: none;
 }
