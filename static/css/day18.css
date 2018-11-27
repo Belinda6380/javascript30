@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background: url("../img/seoul02.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#videos {
+  list-style: none;
+  background: rgba(255, 255, 255, 1);
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 1);
+}
+#videos li {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  padding: 10px;
+}
+#videos li:last-child {
+  border-bottom: 0;
+}
+
+#videos li.total {
+  list-style-type: none;
+}
+
+.key {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.duration {
+  color: #949494;
+  text-align: right;
+  width: 100%;
+}
