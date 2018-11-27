@@ -155,5 +155,23 @@
       <description>scroll event listener Performance issues with detecting scroll &amp;amp; the need for debouncing That you can set default function argument values as initial arguments (I think I already knew this but definitely a great refresher/example) window.scrollY and offsetTop properties How to access the height and width of DOM elements  It was really helpful to learn how the different properties of the images and the window can be used to calculate positions and heights.</description>
     </item>
     
+    <item>
+      <title>Sorting without articles 🔤</title>
+      <link>https://alicegherbison.github.io/javascript30/day17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day17/</guid>
+      <description>sort() method on arrays and how to pass a function with two options to compare Regex for stripping &amp;ldquo;a&amp;rdquo;, &amp;ldquo;the&amp;rdquo; or &amp;ldquo;an&amp;rdquo; and how to make it insensitive Setting an array to innerHTML will call toString() and put a comma between each item - so using join(&amp;#39;&amp;#39;) will remove the commas  I kept my version of the code without ES6 as much as possible for readability (until I can better grasp ternerary operators, arrow functions and implicit returns at a glance without my brain exploding).</description>
+    </item>
+    
+    <item>
+      <title>Tally string times with reduce ➕</title>
+      <link>https://alicegherbison.github.io/javascript30/day18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day18/</guid>
+      <description>How to split out the time in minutes and seconds, convert to float and total them  My main learning from this is how methods can be strung together to perform several things at once - the solution here is quite elegant.</description>
+    </item>
+    
   </channel>
 </rss>
