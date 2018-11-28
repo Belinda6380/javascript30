@@ -173,5 +173,14 @@
       <description>How to split out the time in minutes and seconds, convert to float and total them  My main learning from this is how methods can be strung together to perform several things at once - the solution here is quite elegant.</description>
     </item>
     
+    <item>
+      <title>Webcam fun 🎥</title>
+      <link>https://alicegherbison.github.io/javascript30/day19/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day19/</guid>
+      <description>Passing an image&amp;rsquo;s data into HREF gives you an image  There&amp;rsquo;s so much in this tutorial - not just the image manipulation but how to grab the webcam data and get it back on the page. Basically absolutely everything in this was a new thing.</description>
+    </item>
+    
   </channel>
 </rss>
