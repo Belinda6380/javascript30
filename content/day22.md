@@ -5,3 +5,5 @@ layout = "single"
 day = "22"
 screenshot = ""
 +++
+
+* {{< code "getBoundingClientRect" >}} method
