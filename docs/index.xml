@@ -74,6 +74,15 @@
     </item>
     
     <item>
+      <title>Geolocation 🌏</title>
+      <link>https://alicegherbison.github.io/javascript30/day21/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day21/</guid>
+      <description>How to access a device&amp;rsquo;s location and speed Setting appropriate error messages if authorisation to access location is denied  I wasn&amp;rsquo;t able to test this one without XCode or running around outside with my phone.</description>
+    </item>
+    
+    <item>
       <title>HTML5 canvas 🎨</title>
       <link>https://alicegherbison.github.io/javascript30/day08/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
