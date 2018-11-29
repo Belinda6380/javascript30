@@ -3,7 +3,7 @@ title = "Speech detection 💬"
 type = "demo"
 layout = "single"
 day = "20"
-screenshot = ""
+screenshot = "Speech recognition output"
 +++
 
 * The fact that speech recognition exists in the browser!
