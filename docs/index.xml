@@ -192,6 +192,15 @@
     </item>
     
     <item>
+      <title>Speech synthesis 🔊</title>
+      <link>https://alicegherbison.github.io/javascript30/day23/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day23/</guid>
+      <description>Speech synthesis API is available in most browsers Using find() to loop through an array and match a value to a property Various methods available to speak, stop speaking and change voices Setting a flag as a default for a method&amp;rsquo;s parameter, but this can&amp;rsquo;t be passed with the flag to an event listener - you have to pass a function  I added some code to change the default language and filter to fewer languages.</description>
+    </item>
+    
+    <item>
       <title>Tally string times with reduce ➕</title>
       <link>https://alicegherbison.github.io/javascript30/day18/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
