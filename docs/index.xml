@@ -201,6 +201,15 @@
     </item>
     
     <item>
+      <title>Sticky nav 🔝</title>
+      <link>https://alicegherbison.github.io/javascript30/day24/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day24/</guid>
+      <description>Very short and simple sticky nav after user scroll reaches a certain height. I like the CSS technique for applying the class via the &amp;lt;body&amp;gt; element and cascading to the elements within it to adjust the stickyness of the nav and placement of the main content.</description>
+    </item>
+    
+    <item>
       <title>Tally string times with reduce ➕</title>
       <link>https://alicegherbison.github.io/javascript30/day18/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
