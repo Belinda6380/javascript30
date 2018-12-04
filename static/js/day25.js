@@ -1,0 +1,1 @@
+// append class to body element
