@@ -17,14 +17,17 @@ nav {
 }
 
 .cool > li > a {
-  color: yellow;
+  color: #000000;
   text-decoration: none;
-  font-size: 20px;
-  background: rgba(0,0,0,0.2);
-  padding:10px 20px;
+  background:rgba(0,0,0,0.05);
+  padding: 5px 15px;
   display: inline-block;
   margin:20px;
-  border-radius:5px;
+  border-radius: 20px;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 nav ul {
@@ -48,7 +51,7 @@ nav ul {
   padding:20px;
   top:-20px;
   border-radius:2px;
-  transition: all 0.5s;
+  transition: all 0.2s;
   transform: translateY(100px);
   will-change: opacity;
   display: none;
@@ -69,7 +72,7 @@ nav ul {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
-  transition:all 0.3s, opacity 0.1s, transform 0.2s;
+  transition:all 0.2s, opacity 0.1s, transform 0.2s;
   transform-origin: 50% 0;
   display: flex;
   justify-content: center;
@@ -104,19 +107,18 @@ nav ul {
   height: 150px;
 }
 
-.courses {
+.colours {
   min-width:300px;
 }
 
-.courses li {
+.colours li {
   padding: 10px 0;
   display: block;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid #000000;
 }
 
 .dropdown a {
   text-decoration: none;
-  color: #ffc600;
 }
 
 a.button {
@@ -126,6 +128,22 @@ a.button {
   color:white;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.F99E1F {
+  position: relative;
+}
+
+.F99E1F::after {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #F99E1F;
+  border: 2px solid #000000;
+  margin-right: 5px;
 }
 
 .button[href*=twitter] { background: #019FE9; }

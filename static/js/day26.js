@@ -4,7 +4,7 @@ const nav = document.querySelector('.top');
 
 function handleEnter() {
   this.classList.add('trigger-enter');
-  setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+  setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 100);
   background.classList.add('open');
 
   const dropdown = this.querySelector('.dropdown');
@@ -25,7 +25,7 @@ function handleEnter() {
 
 function handleLeave(){
   this.classList.add('trigger-enter');
-  setTimeout(() => this.classList.remove('trigger-enter', 'trigger-enter-active'), 150);
+  setTimeout(() => this.classList.remove('trigger-enter', 'trigger-enter-active'), 100);
   background.classList.remove('open');
 }
 
