@@ -14,5 +14,6 @@ screenshot = ""
 * You can't tell the width and the height of a hidden element
 * {{< code "classList.contains()" >}} checks if an element has a class
 * The second portion of a statement evaluating using {{< code "&&" >}} won't run if the first doesn't evaluate to true (I think I already knew this on some level, but this was a great reminder!)
+* {{< code "perspective" >}} CSS property
 
-This was a good recap on ES6 template strings and setting styles with Javascript.
+This was a good recap on ES6 template strings and setting styles with Javascript, as well as a really nice animation effect based on a menu on [Stripe](https://stripe.com/)'s website.
