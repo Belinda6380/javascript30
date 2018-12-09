@@ -83,12 +83,21 @@
     </item>
     
     <item>
-      <title>Follow along link highlighting ☀️</title>
+      <title>Follow-along link highlighting ☀️</title>
       <link>https://alicegherbison.github.io/javascript30/day22/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day22/</guid>
       <description> getBoundingClientRect method How to set the width and height of a hover state  </description>
+    </item>
+    
+    <item>
+      <title>Follow-along navigation</title>
+      <link>https://alicegherbison.github.io/javascript30/day26/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day26/</guid>
+      <description>That you can use a full CSS selector in querySelector() methods (with child or sibling selectors) mouseEnter and mouseLeave events In ES6 arrow functions, the value of this is inherited from any parent functions getBoundingClientRect() is used to get the bounding box of an element, but you need to account for extra elements above the content you want to place - which is taken care of in jQuery with offset() for you .</description>
     </item>
     
     <item>
