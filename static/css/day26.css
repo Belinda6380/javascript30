@@ -117,6 +117,31 @@ nav ul {
   border-bottom: 1px solid #000000;
 }
 
+.colours li a {
+  margin-left: 35px;
+  color: #000000;
+}
+
+a[href^="http://"]:not([href*="github.io"]):hover, a[href^="https://"]:not([href*="github.io"]):hover {
+  color: #000000;
+}
+
+.colours li span {
+  position: relative;
+}
+
+.colours li span::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 1px;
+  right: -30px;
+  border: 2px solid #000000;
+  margin-right: 5px;
+}
+
 .dropdown a {
   text-decoration: none;
 }
@@ -130,22 +155,22 @@ a.button {
   text-align: center;
 }
 
-.F99E1F {
-  position: relative;
+.deep-cerise::after {
+  background-color: #DD1C90;
 }
 
-.F99E1F::after {
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  content: "";
-  width: 15px;
-  height: 15px;
+.cerulean-blue::after {
+  background-color: #1c56dd; 
+}
+
+.forest-green::after {
+  background-color: #1faa22;
+}
+
+.dark-tangerine::after {
   background-color: #F99E1F;
-  border: 2px solid #000000;
-  margin-right: 5px;
 }
 
-.button[href*=twitter] { background: #019FE9; }
-.button[href*=website] { background: #3B5998; }
-.button[href*=github] { background: #ffc600; }
+.button[href*=twitter]:hover, .button[href*=alice]:hover {
+  color: #ffffff !important;
+}
