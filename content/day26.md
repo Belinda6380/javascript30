@@ -1,5 +1,5 @@
 +++
-title = "Follow-along navigation"
+title = "Follow-along navigation ⤵️"
 type = "demo"
 layout = "single"
 day = "26"

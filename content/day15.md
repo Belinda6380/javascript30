@@ -1,5 +1,5 @@
 +++
-title = "Local storage & event delegation"
+title = "Local storage & event delegation 📦"
 type = "demo"
 layout = "single"
 day = "15"
