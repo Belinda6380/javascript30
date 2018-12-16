@@ -101,7 +101,7 @@
     </item>
     
     <item>
-      <title>Follow-along navigation</title>
+      <title>Follow-along navigation ⤵️</title>
       <link>https://alicegherbison.github.io/javascript30/day26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -156,7 +156,7 @@
     </item>
     
     <item>
-      <title>Local storage &amp; event delegation</title>
+      <title>Local storage &amp; event delegation 📦</title>
       <link>https://alicegherbison.github.io/javascript30/day15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -243,6 +243,15 @@
       
       <guid>https://alicegherbison.github.io/javascript30/day18/</guid>
       <description>How to split out the time in minutes and seconds, convert to float and total them  My main learning from this is how methods can be strung together to perform several things at once - the solution here is quite elegant.</description>
+    </item>
+    
+    <item>
+      <title>Video speed controller 💯</title>
+      <link>https://alicegherbison.github.io/javascript30/day28/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day28/</guid>
+      <description> How to calculate a playback rate using the current mouse position within an element when it uses a different scale  </description>
     </item>
     
     <item>

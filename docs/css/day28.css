@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background:url('../img/seoul08.jpg');
+  background-size:cover;
+}
+.wrapper {
+  width:880px;
+  display:flex;
+}
+video {
+  border: 10px solid #000000;
+}
+
+.speed {
+  background:#3BC1AC;
+  flex:1;
+  display:flex;
+  align-items:flex-start;
+  margin:10px;
+  border-radius:50px;
+  border: 10px solid #000000;
+  box-shadow:0 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.speed-bar {
+  width:100%;
+  background:hsla(35, 95%, 55%, 1);
+  text-shadow:1px 1px 0 rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2px;
+  color:#000000;
+  font-weight: bold;
+  height:16.3%;
+  border-bottom: 10px solid #000000;
+}
