@@ -1,8 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 10px;
-  background: #8E24AA;
-  background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+  background: #1c56dd;
 }
 
 *, *:before, *:after {
@@ -12,15 +10,15 @@ html {
 body {
   margin:0;
   text-align: center;
-  font-family: 'Inconsolata', monospace;
 }
 
 .display__time-left {
   font-weight: 100;
-  font-size: 20rem;
+  font-size: 25rem;
   margin: 0;
   color:white;
-  text-shadow:4px 4px 0 rgba(0,0,0,0.05);
+  text-shadow: 5px 5px 0 rgba(0,0,0,1);
+  line-height: 1;
 }
 
 .timer {
@@ -45,27 +43,35 @@ body {
 .timer__controls input {
   flex:1;
   border:0;
-  padding:2rem;
+  padding:2.5rem;
+  font-family: serif;
+  font-size: 2rem;
+  border-bottom: 5px solid #000000;
+  border-right: 5px solid #000000;
+}
+
+.timer__controls input:focus {
+  outline: 5px solid #ffee00;
 }
 
 .timer__button {
+  font-family: serif;
   background:none;
   border:0;
   cursor: pointer;
-  color:white;
+  color:#000000;
   font-size: 2rem;
   text-transform: uppercase;
-  background:rgba(0,0,0,0.1);
-  border-bottom:3px solid rgba(0,0,0,0.2);
-  border-right:1px solid rgba(0,0,0,0.2);
+  background:#ffffff;
+  border-bottom: 5px solid #000000;
+  border-right: 5px solid #000000;
   padding:1rem;
-  font-family: 'Inconsolata', monospace;
 }
 
-.timer__button:hover,
-.timer__button:focus {
-  background:rgba(0,0,0,0.2);
-  outline:0;
+.timer__button:focus, .timer__button:hover {
+  outline: 0;
+  background:#ffee00;
+  color: #000000;
 }
 
 .display {
@@ -79,4 +85,5 @@ body {
 .display__end-time {
   font-size: 4rem;
   color:white;
+  text-shadow: 5px 5px 0 rgba(0,0,0,1);
 }
