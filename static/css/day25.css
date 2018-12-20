@@ -4,20 +4,20 @@ html {
 *, *:before, *:after { box-sizing: inherit; }
 
 div {
-  width:100%;
+  width: 100%;
   height: 100%;
-  padding:100px;
+  padding: 10rem;
 }
 
 .one {
-  background: #dd1c90;
   height: 100vh;
+  background: var(--magenta);
 }
 
 .two {
-  background:#ffee00;
+  background: var(--yellow);
 }
 
 .three {
-  background:#10F0F0;
+  background: var(--cyan);
 }
