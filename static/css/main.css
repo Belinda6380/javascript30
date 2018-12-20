@@ -31,8 +31,8 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
 	border: 0;
+	padding: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -68,10 +68,10 @@ html {
 
 /* sectioning & structuring */
 body {
-	font-family: serif;
 	border-top: 8px solid;
 	font-size: 1.8rem;
 	line-height: 1.8;
+	font-family: serif;
 }
 
 header, main {
@@ -89,20 +89,20 @@ main {
 
 /* headings */
 h1 {
-	font-weight: bold;
 	font-size: 4rem;
+	font-weight: bold;
 }
 
 h2 {
-	font-weight: bold;
-	font-size: 2.4rem;
 	margin-top: 1.8rem;
+	font-size: 2.4rem;
+	font-weight: bold;	
 }
 
 h3 {
-	font-weight: bold;
-	font-size: 2.1rem;
 	margin-top: 1.8rem;
+	font-size: 2.1rem;
+	font-weight: bold;
 }
 
 /* text & lists */
@@ -123,7 +123,7 @@ ol {
 }
 
 li {
-margin-top: 0.8rem;
+	margin-top: 0.8rem;
 }
 
 ul.exercises {
@@ -135,8 +135,8 @@ ul.exercises > li:not(first-child) {
 }
 
 ul.links {
-	list-style: none;
 	text-align: center;
+	list-style: none;
 }
 
 ul.links li {
@@ -151,8 +151,8 @@ a {
 }
 
 a:hover {
-	text-decoration: none;
 	cursor: e-resize;
+	text-decoration: none;
 }
 
 a[href^="http://"]:not([href*="github.io"]):hover,
@@ -174,8 +174,8 @@ em {
 }
 
 code {
+	background: var(--grey);
 	font-family: monospace;
-	background-color: var(--grey);
 }
 
 p code, li code {
@@ -183,10 +183,10 @@ p code, li code {
 }
 
 img.preview {
-	width: 100%;
 	display: block;
-	outline: 10px solid var(--yellow);
 	margin-top: 1.8rem;
+	width: 100%;
+	outline: 10px solid var(--yellow);
 }
 
 a img:hover {
@@ -199,6 +199,6 @@ font-family: sans-serif;
 }
 
 ::selection {
-background-color: var(--yellow);
+background: var(--yellow);
 text-shadow: none;
 }
