@@ -1,23 +1,66 @@
 body {
-  margin: 0;
-  padding: 0;
-  display:flex;
-  background:rgb(255, 150, 13);
-  min-height:100vh;
   align-items: center;
   justify-content: center;
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  background: var(--orange);  
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 0 0.5rem;
+  width: 100%;
+  background:transparent;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  border: 0.2px solid rgba(1, 1, 1, 0);
+  width: 100%;
+  height: 0.6rem;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -0.4rem;
+  box-shadow:0 0 2px rgba(0,0,0,0.2);
+  border-radius: 5rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  background: var(--magenta);
+  cursor: pointer;  
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: var(--cyan);
+}
+input[type=range]::-moz-range-track {
+  border: 0.2px solid rgba(1, 1, 1, 0);
+  width: 100%;
+  height: 0.6rem;
+  background: var(--white);
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  border-radius: 5rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  background: var(--magenta);
+  cursor: pointer;
 }
 
 .player {
-  max-width:750px;
-  border:10px solid #ffee00;
-  box-shadow:0 0 20px rgba(0,0,0,0.2);
   position: relative;
-  font-size: 0;
   overflow: hidden;
+  box-shadow:0 0 20px rgba(0,0,0,0.2);
+  border:10px solid var(--yellow);
+  max-width:750px;  
+  font-size: 0;  
 }
 
-/* This css is only applied when fullscreen is active. */
 .player:fullscreen {
   max-width: none;
   width: 100%;
@@ -33,34 +76,34 @@ body {
 }
 
 .player__button {
-  background:none;
-  border:0;
-  line-height:1;
-  color:white;
-  text-align: center;
-  outline:0;
+  border: 0;  
+  max-width: 5rem;
   padding: 0;
-  cursor:pointer;
-  max-width:50px;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  line-height:1;
+  text-align: center;
+  color: var(--white);
 }
 
 .player__button:focus {
-  border-color: #ffc600;
+  border-color: var(--orange);
 }
 
 .player__slider {
-  width:10px;
-  height:30px;
+  width: 1rem;
+  height: 3rem;
 }
 
 .player__controls {
-  display:flex;
   position: absolute;
   bottom:0;
-  width: 100%;
-  transform: translateY(100%) translateY(-5px);
-  transition:all .3s;
   flex-wrap:wrap;
+  display: flex;
+  transform: translateY(100%) translateY(-0.5rem);
+  transition: all .3s;
+  width: 100%;  
   background:rgba(255,255,255,0.25);
 }
 
@@ -77,68 +120,19 @@ body {
 }
 
 .progress {
-  flex:10;
   position: relative;
-  display:flex;
+  flex:10;
   flex-basis:100%;
+  display:flex;
+  transition: height 0.3s;
   height:5px;
-  transition:height 0.3s;
-  background:rgba(255,255,255,0.5);
   cursor:ew-resize;
+  background:rgba(255,255,255,0.5);
 }
 
 .progress__filled {
-  width: 0%;
-  background:#dd1c90;
-  flex:0;
+  flex: 0;
   flex-basis: 0%;
-}
-
-/* unholy css to style input type="range" */
-
-input[type=range] {
-  -webkit-appearance: none;
-  background:transparent;
-  width: 100%;
-  margin: 0 5px;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 6px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
-  background: rgba(255,255,255,0.8);
-  border: 0.2px solid rgba(1, 1, 1, 0);
-}
-input[type=range]::-webkit-slider-thumb {
-  height: 14px;
-  width: 14px;
-  border-radius: 50px;
-  background: #dd1c90;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -4px;
-  box-shadow:0 0 2px rgba(0,0,0,0.2);
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #10F0F0;
-}
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 6px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
-  background: #ffffff;
-  border: 0.2px solid rgba(1, 1, 1, 0);
-}
-input[type=range]::-moz-range-thumb {
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
-  height: 18px;
-  width: 18px;
-  border-radius: 50px;
-  background: #dd1c90;
-  cursor: pointer;
+  width: 0%;
+  background:var(--magenta);
 }
