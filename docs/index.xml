@@ -56,6 +56,15 @@
     </item>
     
     <item>
+      <title>Countdown timer</title>
+      <link>https://alicegherbison.github.io/javascript30/day29/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day29/</guid>
+      <description>Date.now() and clearInterval() methods Use document.title() to update the title tag, which displays content in the tab top in the browser window Passing the number of milliseconds past 1st January 1970) when to a new Date object gives you a formatted timestamp How to access custom data attributes on elements using dataset property How to use clearInterval() to reset any existing timers If an HTML element has a name attribute, you can use dot notation to select it immediately without using docuement.</description>
+    </item>
+    
+    <item>
       <title>Custom HTML5 video player 📺</title>
       <link>https://alicegherbison.github.io/javascript30/day11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
