@@ -56,12 +56,12 @@
     </item>
     
     <item>
-      <title>Countdown timer</title>
+      <title>Countdown timer ⏳</title>
       <link>https://alicegherbison.github.io/javascript30/day29/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day29/</guid>
-      <description>Date.now() and clearInterval() methods Use document.title() to update the title tag, which displays content in the tab top in the browser window Passing the number of milliseconds past 1st January 1970) when to a new Date object gives you a formatted timestamp How to access custom data attributes on elements using dataset property How to use clearInterval() to reset any existing timers If an HTML element has a name attribute, you can use dot notation to select it immediately without using docuement.</description>
+      <description>Date.now() and clearInterval() methods Use document.title() to update the title tag, which displays content in the tab top in the browser window Passing the number of milliseconds past 1st January 1970 to a new Date object gives you a formatted timestamp How to access custom data attributes on elements using dataset property How to use clearInterval() to reset any existing timers If an HTML element has a name attribute, you can use dot notation to select it immediately without using docuement.</description>
     </item>
     
     <item>
@@ -270,6 +270,15 @@
       
       <guid>https://alicegherbison.github.io/javascript30/day19/</guid>
       <description>Passing an image&amp;rsquo;s data into HREF gives you an image  There&amp;rsquo;s so much in this tutorial - not just the image manipulation but how to grab the webcam data and get it back on the page. Basically absolutely everything in this was a new thing.</description>
+    </item>
+    
+    <item>
+      <title>Whack-a-mole 🐹</title>
+      <link>https://alicegherbison.github.io/javascript30/day30/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alicegherbison.github.io/javascript30/day30/</guid>
+      <description>Returning a function within itself can help perform a check on its output, and is a form of recursion setTimeout() method to do something after a certain amount of time How to usefully calculate random numbers That you can use the isTrusted property on a mouse event to check if the click truly came from the user&amp;rsquo;s device (as opposed to Javascript)  It seems simpler to build a whack-a-mole game than I was expecting!</description>
     </item>
     
   </channel>
