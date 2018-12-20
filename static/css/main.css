@@ -1,5 +1,14 @@
 :root {
 	--black: #000000;
+	--grey60: #3c3c3c;
+  --grey120: #787878;
+  --grey124: #7c7c7c;
+  --grey140: #8c8c8c;
+  --grey185: #b9b9b9;
+	--grey200: #c8c8c8;
+	--grey216: #d8d8d8;
+	--grey226: #e2e2e2;
+  --grey247: #f7f7f7;
 	--grey: #eff0f1;
 	--white: #ffffff;
 	--purple: #9940ff;
@@ -11,6 +20,8 @@
 	--mid-cyan: #34c6c9;
 	--dark-cyan: #3bc1ac;
 	--blue: #1c56dd;
+  --gold: #d4b9a5;
+  --bronze: #bb937a;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

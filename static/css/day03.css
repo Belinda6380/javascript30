@@ -1,7 +1,7 @@
 :root {
-  --base: #dd1c90;
-  --spacing: 10px;
-  --blur: 3px;
+  --base: var(--magenta);
+  --spacing: 1rem;
+  --blur: 0.3rem;
 }
 
 body {
@@ -9,15 +9,15 @@ body {
 }
 
 input {
-  width:100px;
+  width: 10rem;
 }
 
 img {
+  margin: 0 auto;
+  max-width: 95%;
   padding: var(--spacing);
   background: var(--base);
-  filter: blur(var(--blur));
-  max-width: 95%;
-  margin: 0 auto;
+  filter: blur(var(--blur)); 
 }
 
 .hl {
@@ -25,17 +25,17 @@ img {
 }
 
 .controls {
-  margin-bottom: 2rem;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
   align-content: center;
+  display: flex;
+  margin-bottom: 2rem;  
 }
 
 .control {
-  padding: 0 2rem;
   margin-top: 2rem;
+  padding: 0 2rem;
 }
 
 .control > * {

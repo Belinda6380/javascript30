@@ -1,8 +1,3 @@
-   :root {
-     --grey216: #D8D8D8;
-     --grey247: #F7F7F7;
-   }
-   
    html {
     box-sizing: border-box;
     background: var(--mid-cyan);
