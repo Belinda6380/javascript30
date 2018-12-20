@@ -1,11 +1,11 @@
 
 html {
-  background:url('../img/seoul05.jpg') center no-repeat;
-  background-size:cover;
-  min-height:100vh;
-  display:flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  min-height: 100vh;
+  background: url('../img/seoul05.jpg') center no-repeat;
+  background-size:cover;
   text-align: center;
 }
 
@@ -14,44 +14,44 @@ body{
 }
 
 h1 {
-  text-align: center;
-  margin: 0;
-  text-transform: uppercase;
   line-height: 3rem;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 svg {
-  fill:white;
-  background: rgba(0,0,0,0.1);
-  padding: 20px;
+  margin-bottom: 3rem;
   border-radius: 50%;
-  width: 200px;
-  margin-bottom: 30px;
+  width: 20rem;
+  padding: 2rem;
+  background: rgba(0,0,0,0.1);
+  fill: var(--white);  
 }
 
 .wrapper {
-  padding: 30px;
-  max-width: 400px;
-  background: rgba(255,255,255,1);
   border: 10px solid rgba(0,0,0,1);
+  max-width: 40re,;
+  padding: 3rem;  
+  background: var(--white);
 }
 
 .plates {
   margin: 0;
   padding: 0;
-  text-align: left;
   list-style: none;
+  text-align: left;
 }
 
 .plates li {
-  border-bottom: 2px solid rgba(0,0,0,1);
-  padding: 10px 0;
   display: flex;
   margin-top: 0;
+  border-bottom: 2px solid var(--black);
+  padding: 1rem 0;  
 }
 
 .plates label {
-  flex:1;
+  flex: 1;
   cursor: pointer;
   
 }
@@ -62,7 +62,7 @@ svg {
 
 .plates input + label:before {
   content: '⬜️';
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .plates input:checked + label:before {
@@ -70,25 +70,25 @@ svg {
 }
 
 .add-items {
-  margin-top: 20px;
   display: flex;
+  margin-top: 2rem;
 }
 
 .add-items input {
-  padding:10px;
-  outline:0;
-  border:2px solid rgba(0,0,0,1);
-  font-family: serif;
-  color: rgba(0,0,0,1);
   flex-grow: 1;
+  border: 2px solid var(--black);
+  padding: 1rem;
+  outline: 0;
   font-size: 100%;
-  letter-spacing: 0.5px;
+  font-family: serif;
+  letter-spacing: 0.05rem;
+  color: var(--black);
 }
 
 .add-items input[type="submit"] {
-  text-transform: uppercase;
+  margin-left: 1rem;
+  background: var(--black);
   font-weight: bold;
-  color: rgba(255,255,255,1);
-  background-color: rgba(0,0,0,1);
-  margin-left: 10px;
+  text-transform: uppercase;
+  color: var(--white);  
 }
