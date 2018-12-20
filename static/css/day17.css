@@ -1,22 +1,22 @@
 body {
+  align-items: center;
+  display: flex;
   margin: 0;
+  min-height: 100vh;
   background: url("../img/seoul07.jpg");
   background-size: cover;
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
 }
 
 #films {
-  background: rgba(255, 255, 255, 1);
-  width: 300px;
   margin: auto;
-  padding: 10px;
-  box-shadow: 0 0 0 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 0 0 10px var(--black);
+  width: 30rem;
+  padding: 1rem;
+  background: var(--white);
 }
 #films li {
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
-  padding: 10px;
+  border-bottom: 1px solid var(--black);
+  padding: 1rem;
 }
 #films li:last-child {
   border-bottom: 0;
