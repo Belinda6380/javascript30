@@ -43,6 +43,15 @@ nav li {
   text-align: center;  
 }
 
+nav a {
+  display: inline-block;
+  transition: all 0.2s;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase; 
+  color:var(--white); 
+}
+
 li.logo {
   overflow: hidden;
   transition: all 0.5s;
@@ -58,13 +67,4 @@ li.logo a {
 
 .fixed-nav li.logo {
   max-width: 50rem;
-}
-
-nav a {
-  display: inline-block;
-  transition: all 0.2s;
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase; 
-  color:var(--white); 
 }
