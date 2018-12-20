@@ -1,17 +1,11 @@
 html {
   box-sizing: border-box;
-  font-size: 10px;
-  background: #ffc600;
+  background: #1faa22;
+  text-align: center;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  padding: 0;
-  margin:0;
-  font-family: 'Amatic SC', cursive;
+h1:first-child {
+  margin-top: 50px;
 }
 
 h1 {
@@ -21,19 +15,41 @@ h1 {
   margin-bottom: 0;
 }
 
+button {
+  font-family: serif;
+  font-size: 3rem;
+  background: #ffffff;
+  border: 5px solid #000000;
+  padding: 10px 20px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
 .score {
-  background:rgba(255,255,255,0.2);
+  background: #ffffff;
   padding:0 3rem;
   line-height:1;
   border-radius:1rem;
+  font-weight: bold;
+  border: 10px solid #000000;
 }
 
 .game {
-  width:600px;
-  height:400px;
-  display:flex;
-  flex-wrap:wrap;
-  margin:0 auto;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .hole {

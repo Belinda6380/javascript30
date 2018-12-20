@@ -45,5 +45,3 @@ function bonk(e){
 }
 
 moles.forEach(mole => mole.addEventListener('click', bonk));
-
-// 10:10
