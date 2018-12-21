@@ -43,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day27/</guid>
-      <description>I love the maths that&amp;rsquo;s used for this one - what x values to grab and how to calculate the scroll&amp;rsquo;s position.</description>
+      <description>I love the maths used here - what x values to grab and how to calculate the scroll&amp;rsquo;s position.</description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day29/</guid>
-      <description>Date.now() and clearInterval() methods Use document.title() to update the title tag, which displays content in the tab top in the browser window Passing the number of milliseconds past 1st January 1970 to a new Date object gives you a formatted timestamp How to access custom data attributes on elements using dataset property How to use clearInterval() to reset any existing timers If an HTML element has a name attribute, you can use dot notation to select it immediately without using docuement.</description>
+      <description>Date.now() and clearInterval() methods use document.title() to update the title tag, which displays content in the tab top in the browser window passing the number of milliseconds past 1st January 1970 to a new Date object gives you a formatted timestamp how to access custom data attributes on elements using dataset property how to use clearInterval() to reset any existing timers if an HTML element has a name attribute, you can use dot notation to select it immediately without using docuement.</description>
     </item>
     
     <item>
@@ -70,7 +70,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day11/</guid>
-      <description>:fullscreen pseudo class step attribute for slider elements That you can call querySelector() on node/object variables video element paused property Accessing data attributes with dataset parseFloat() method timeupdate video event Using ES6 function arrow notation to check if a variable is set to true before continuing running the function  While still a bit iffy on arrow functions (and it&amp;rsquo;s clear that&amp;rsquo;s an area I need to revise in-depth), I was able to build out additional functionality with a mute button.</description>
+      <description>:fullscreen pseudo class step attribute for slider elements that you can call querySelector() on node/object variables video element paused property accessing data attributes with dataset parseFloat() method timeupdate video event using ES6 function arrow notation to check if a variable is set to true before continuing running the function  While still a bit iffy on arrow functions (and it&amp;rsquo;s clear that&amp;rsquo;s an area I need to revise in-depth), I was able to build out additional functionality with a mute button.</description>
     </item>
     
     <item>
@@ -88,7 +88,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day25/</guid>
-      <description>The concept of &amp;lsquo;bubbling&amp;rsquo; - triggering events on all parent elements in the document &amp;lsquo;Capturing&amp;rsquo; goes top-down; &amp;lsquo;bubbling&amp;rsquo; goes back up Passing a third argument in a event listener is an &amp;lsquo;options&amp;rsquo; object and you can set if you want it to fire on the capturing stopPropagation() method will stop the bubbling up The &amp;lsquo;once&amp;rsquo; option - which unbinds the event listener  Not much in the actual demo for this one but the concepts are very useful.</description>
+      <description>the concept of &amp;lsquo;bubbling&amp;rsquo; - triggering events on all parent elements in the document &amp;lsquo;capturing&amp;rsquo; goes top-down; &amp;lsquo;bubbling&amp;rsquo; goes back up passing a third argument in a event listener is an &amp;lsquo;options&amp;rsquo; object and you can set if you want it to fire on the capturing stopPropagation() method will stop the bubbling up the &amp;lsquo;once&amp;rsquo; option - which unbinds the event listener  Not much in the actual demo for this one but the concepts are very useful.</description>
     </item>
     
     <item>
@@ -106,7 +106,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day22/</guid>
-      <description> getBoundingClientRect method How to set the width and height of a hover state  </description>
+      <description> getBoundingClientRect method how to set the width and height of a hover state  </description>
     </item>
     
     <item>
@@ -115,7 +115,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day26/</guid>
-      <description>That you can use a full CSS selector in querySelector() methods (with child or sibling selectors) mouseEnter and mouseLeave events In ES6 arrow functions, the value of this is inherited from any parent functions getBoundingClientRect() is used to get the bounding box of an element, but you need to account for extra elements above the content you want to place - which is taken care of in jQuery with offset() for you .</description>
+      <description>that you can use a full CSS selector in querySelector() methods (with child or sibling selectors) mouseEnter and mouseLeave events in ES6 arrow functions, the value of this is inherited from any parent functions getBoundingClientRect() is used to get the bounding box of an element, but you need to account for extra elements above the content you want to place - which is taken care of in jQuery with offset() for you .</description>
     </item>
     
     <item>
@@ -124,7 +124,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day21/</guid>
-      <description>How to access a device&amp;rsquo;s location and speed Setting appropriate error messages if authorisation to access location is denied  I wasn&amp;rsquo;t able to test this one without XCode or running around outside with my phone.</description>
+      <description>how to access a device&amp;rsquo;s location and speed setting appropriate error messages if authorisation to access location is denied  I wasn&amp;rsquo;t able to test this one without XCode or running around outside with my phone.</description>
     </item>
     
     <item>
@@ -133,7 +133,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day08/</guid>
-      <description>the context is what is drawn on, and this can be 2D or 3D ES6 functions can be inline or block&amp;lt;  Loved this one.</description>
+      <description>the context is what is drawn on, and this can be 2D or 3D ES6 functions can be inline or block  Loved this one.</description>
     </item>
     
     <item>
@@ -142,7 +142,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day10/</guid>
-      <description>Input Checkbox checked Property and how to set it  The logic to this one was really clever. The event objects have more capability than I realised, and being able to set checkboxes to checked via Javascript is easier than expected.</description>
+      <description>input Checkbox checked Property and how to set it  The logic to this one was really clever. The event objects have more capability than I realised, and being able to set checkboxes to checked via Javascript is easier than expected.</description>
     </item>
     
     <item>
@@ -170,7 +170,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day15/</guid>
-      <description> submit event listener ES6 shorthand for assigning object properties Form elements reset() method localStorage converts things to strings That you can use OR operators in variable assignments Event delegation e.target matches() method from the browser API  </description>
+      <description> submit event listener ES6 shorthand for assigning object properties form elements reset() method localStorage converts things to strings that you can use OR operators in variable assignments event delegation e.target matches() method from the browser API  </description>
     </item>
     
     <item>
@@ -179,7 +179,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day16/</guid>
-      <description>contenteditable HTML attribute That you can use document.querySelector() on an element that you&amp;rsquo;ve already selected using it How to adjust for the offset of the target element when hovering over those that are nested within others  This is incredibly clever. Before it started I thought the solution would be simple, but it really isn&amp;rsquo;t and I couldn&amp;rsquo;t have figured out the maths for this! It seems useful for some fun page styling, so glad to know how it&amp;rsquo;s possible.</description>
+      <description>contenteditable HTML attribute that you can use document.querySelector() on an element that you&amp;rsquo;ve already selected using it how to adjust for the offset of the target element when hovering over those that are nested within others  This is incredibly clever. Before it started I thought the solution would be simple, but it really isn&amp;rsquo;t and I couldn&amp;rsquo;t have figured out the maths for this! It seems useful for some fun page styling, so glad to know how it&amp;rsquo;s done.</description>
     </item>
     
     <item>
@@ -188,7 +188,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day14/</guid>
-      <description> If you update an referenced array or object it will always reference back to the original Empty slice() method with no arguments returns a copy of all the array data, concat() and ES6 spread work similarly Using assign() creates a copy for objects, but only 1 level deep Using JSON.parse() and JSON.clone() can make a deep copy but isn&amp;rsquo;t recommended  </description>
+      <description> if you update an referenced array or object it will always reference back to the original empty slice() method with no arguments returns a copy of all the array data, concat() and ES6 spread work similarly using assign() creates a copy for objects, but only 1 level deep using JSON.parse() and JSON.clone() can make a deep copy but isn&amp;rsquo;t recommended  </description>
     </item>
     
     <item>
@@ -206,7 +206,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day13/</guid>
-      <description>scroll event listener Performance issues with detecting scroll &amp;amp; the need for debouncing That you can set default function argument values as initial arguments (I think I already knew this but definitely a great refresher/example) window.scrollY and offsetTop properties How to access the height and width of DOM elements  It was really helpful to learn how the different properties of the images and the window can be used to calculate positions and heights.</description>
+      <description>scroll event listener performance issues with detecting scroll &amp;amp; the need for debouncing that you can set default function argument values as initial arguments (I think I already knew this but definitely a great refresher/example) window.scrollY and offsetTop properties how to access the height and width of DOM elements  It was really helpful to learn how the different properties of the images and the window can be used to calculate positions and heights.</description>
     </item>
     
     <item>
@@ -215,7 +215,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day17/</guid>
-      <description>sort() method on arrays and how to pass a function with two options to compare Regex for stripping &amp;ldquo;a&amp;rdquo;, &amp;ldquo;the&amp;rdquo; or &amp;ldquo;an&amp;rdquo; and how to make it insensitive Setting an array to innerHTML will call toString() and put a comma between each item - so using join(&amp;#39;&amp;#39;) will remove the commas  I kept my version of the code without ES6 as much as possible for readability (until I can better grasp ternerary operators, arrow functions and implicit returns at a glance without my brain exploding).</description>
+      <description>sort() method on arrays and how to pass a function with two options to compare regex for stripping &amp;ldquo;a&amp;rdquo;, &amp;ldquo;the&amp;rdquo; or &amp;ldquo;an&amp;rdquo; and how to make it insensitive setting an array to innerHTML will call toString() and put a comma between each item - so using join(&amp;#39;&amp;#39;) will remove the commas  I kept my version of the code without ES6 as much as possible for readability (until I can better grasp ternerary operators, arrow functions and implicit returns at a glance without my brain exploding).</description>
     </item>
     
     <item>
@@ -224,7 +224,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day20/</guid>
-      <description>The fact that speech recognition exists in the browser! How to listen for phrases and output responses  This is so cool - there are so many potential areas for use for something like this. I didn&amp;rsquo;t realise speech-to-text transcription essentially comes out the box in most browsers.</description>
+      <description>the fact that speech recognition exists in the browser! how to listen for phrases and output responses  This is so cool - there are so many potential areas for use for something like this. I didn&amp;rsquo;t realise speech-to-text transcription essentially comes out the box in most browsers.</description>
     </item>
     
     <item>
@@ -233,7 +233,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day23/</guid>
-      <description>Speech synthesis API is available in most browsers Using find() to loop through an array and match a value to a property Various methods available to speak, stop speaking and change voices Setting a flag as a default for a method&amp;rsquo;s parameter, but this can&amp;rsquo;t be passed with the flag to an event listener - you have to pass a function  I added some code to change the default language and filter to fewer languages.</description>
+      <description>speech synthesis API is available in most browsers using find() to loop through an array and match a value to a property various methods available to speak, stop speaking and change voices setting a flag as a default for a method&amp;rsquo;s parameter, but this can&amp;rsquo;t be passed with the flag to an event listener - you have to pass a function  I added some code to change the default language and filter to fewer languages.</description>
     </item>
     
     <item>
@@ -251,7 +251,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day18/</guid>
-      <description>How to split out the time in minutes and seconds, convert to float and total them  My main learning from this is how methods can be strung together to perform several things at once - the solution here is quite elegant.</description>
+      <description>how to split out the time in minutes and seconds, convert to float and total them  My main learning from this is how methods can be strung together to perform several things at once - the solution here is quite elegant.</description>
     </item>
     
     <item>
@@ -260,7 +260,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day28/</guid>
-      <description> How to calculate a playback rate using the current mouse position within an element when it uses a different scale  </description>
+      <description> how to calculate a playback rate using the current mouse position within an element when it uses a different scale  </description>
     </item>
     
     <item>
@@ -269,7 +269,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day19/</guid>
-      <description>Passing an image&amp;rsquo;s data into HREF gives you an image  There&amp;rsquo;s so much in this tutorial - not just the image manipulation but how to grab the webcam data and get it back on the page. Basically absolutely everything in this was a new thing.</description>
+      <description>passing an image&amp;rsquo;s data into HREF gives you an image  There&amp;rsquo;s so much in this tutorial - not just the image manipulation but how to grab the webcam data and get it back on the page. Basically absolutely everything in this was a new thing.</description>
     </item>
     
     <item>
@@ -278,7 +278,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://alicegherbison.github.io/javascript30/day30/</guid>
-      <description>Returning a function within itself can help perform a check on its output, and is a form of recursion setTimeout() method to do something after a certain amount of time How to usefully calculate random numbers That you can use the isTrusted property on a mouse event to check if the click truly came from the user&amp;rsquo;s device (as opposed to Javascript)  It seems simpler to build a whack-a-mole game than I was expecting!</description>
+      <description>returning a function within itself can help perform a check on its output, and is a form of recursion setTimeout() method to do something after a certain amount of time how to usefully calculate random numbers that you can use the isTrusted property on a mouse event to check if the click truly came from the user&amp;rsquo;s device (as opposed to Javascript)  It seems simpler to build a whack-a-mole game than I was expecting!</description>
     </item>
     
   </channel>

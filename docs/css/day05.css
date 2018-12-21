@@ -21,7 +21,7 @@
     flex 0.4s cubic-bezier(0.61,-0.19, 0.7,-0.11),
     box-shadow 0s 0.4s,
     background 0.2s;
-  box-shadow: inset 0 0 0 500px var(--black30), inset 0 0 0 5px var(--white20);
+  box-shadow: inset 0 0 0 50rem var(--black30), inset 0 0 0 0.5rem var(--white20);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -63,7 +63,7 @@
 .panel p {
   z-index: 1;
   font-size: 2rem;
-  text-shadow:0 0 4px var(--black70), 0 0 14px var(--black30);  
+  text-shadow:0 0 0.4rem var(--black70), 0 0 1.4rem var(--black30);  
 }
 
 .panel p:nth-child(2) {
@@ -73,6 +73,6 @@
 
 .panel.open {
   flex: 5;
-  box-shadow: inset 0 0 0 5px var(--white20);
+  box-shadow: inset 0 0 0 0.5rem var(--white20);
   font-size: 4rem; 
 }

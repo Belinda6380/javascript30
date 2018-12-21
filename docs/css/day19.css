@@ -1,68 +1,65 @@
 html {
-  font-size: 10px;
-  background:#ffee00;
+  background:var(--yellow);
 }
 
 button {
-  padding: 10px 20px;
-  font-family: serif;
-  font-size: 1.8rem;
-  font-weight: bold;
-  border: 4px solid #000000;
-  margin-top: 1rem;
-  text-transform: uppercase;
   position: relative;
+  margin-top: 1rem;
+  border: 0.4rem solid var(--black);
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-family: serif;
+  font-weight: bold;  
+  text-transform: uppercase;
 }
 
 button:active {
-  top:2px;
+  top: 0.2rem;
 }
 
 button:hover {
-  color: #ffffff;
-  background-color: #000000;
+  background-color: var(--black);
   cursor: pointer;
+  color: var(--white); 
 }
 
 .photobooth {
-  max-width:800px;
   margin: 2rem auto;
-  border-radius:2px;
+  border-radius: 0.2rem;
+  max-width: 80rem;
   text-align: center;
 }
 
-/*clearfix*/
 .photobooth:after {
   content: '';
-  display: block;
   clear: both;
+  display: block;
 }
 
 .photo {
-  width:100%;
-  float:left;
-  border: 10px solid #000000;
+  float: left;
+  border: 1rem solid var(--black);
+  width: 100%;  
 }
 
 .player {
   position: absolute;
-  top:20px;
-  right: 20px;
-  width:200px;
-  border: 10px solid #000000;
+  top: 2rem;
+  right: 2rem;
+  border: 1rem solid var(--black);
+  width: 20rem;
 }
 
 .strip {
-  padding:2rem;
+  padding: 2rem;
   text-align: left;
 }
 .strip img {
-  width:100px;
   overflow-x: scroll;
+  border: 0.3rem solid var(--black);
+  width: 10rem;
   padding:0.8rem 0.8rem 2.5rem 0.8rem;
-  border: 3px solid #000000;
-  /* box-shadow:0 0 3px rgba(0,0,0,0.2); */
-  background:white;
+  background: var(--white);
 }
 
 .strip a:nth-child(5n+1) img { transform: rotate(10deg); }

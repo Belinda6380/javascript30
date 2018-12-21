@@ -1,39 +1,38 @@
 html {
-  background:#dd1c90;
+  background: var(--magenta);
 }
 
 .inbox {
-  max-width:400px;
-  margin:50px auto;
-  background:#ffffff;
-  border-radius:5px;
-  box-shadow:10px 10px 0 rgba(0,0,0,0.1);
+  margin: 5rem auto;
+  box-shadow: 1rem 1rem 0 rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  max-width: 40rem;
+  background: var(--white);  
 }
 
 .item {
-  display:flex;
-  align-items:center;
-  border-bottom: 1px solid rgb(226, 226, 226);
+  align-items: center;
+  display: flex;
+  border-bottom: 0.1rem solid var(--grey226);
 }
 
 .item:last-child {
   border-bottom:0;
 }
 
-
 input:checked + p {
-  background:#F9F9F9;
   text-decoration: line-through;
+  background: var(--grey247);
 }
 
 input[type="checkbox"] {
-  margin:20px;
+  margin: 2rem;
 }
 
 p {
-  margin:0;
-  padding:20px;
-  transition:background 0.2s;
-  flex:1;
-  border-left: 1px solid rgb(170, 170, 170);
+  flex: 1;
+  transition: background 0.2s;
+  margin: 0;
+  border-left: 0.1rem solid var(--grey185);
+  padding: 2rem;  
 }

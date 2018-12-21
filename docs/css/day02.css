@@ -1,155 +1,150 @@
-html {
-  font-size: 62.5%;
-}
-
 body {
-  margin: 0;
-  display:flex;
-  flex:1;
-  min-height: 100vh;
+  flex: 1;
   align-items: center;
+  display: flex;
+  min-height: 100vh;
 }
 
 .clock {
+  position: relative;
+  margin: 0 auto;
+  box-shadow:
+    0.1rem -0.1rem 0 0.1rem var(--grey124),
+    inset -1.5rem 0.8rem 0.5rem 0.5rem var(--grey185);
+  border: 1rem solid var(--black);
+  border-radius: 50%;
   width: 30rem;
   height: 30rem;
-  border: 10px solid black;
-  background: #ffffff;
-  border-radius:50%;
-  margin:50px auto;
-  position: relative;
   padding: 1.2rem;
-  box-shadow:
-  1px -1px 0 1px rgba(124,124,124,255),
-  inset -15px 8px 5px 5px rgba(185,185,185,255);
+  background: var(--white);
 }
 
 .clock-face {
   position: relative;
+  transform: translateY(-0.3rem);
   width: 100%;
   height: 100%;
-  transform: translateY(-3px); /* account for the height of the clock hands */
 }
 
 .centre-support {
+  position: absolute;
+  top: 8.1rem;
+  left: 8.1rem;
   width: 14rem;
   height: 14rem;
-  background-color: black;
+  box-shadow: -1rem 0.7rem 0.5rem 0.1rem var(--grey185);
   border-radius: 50%;
-  position: absolute;
-  top: 27%;
-  left: 27%;
-  box-shadow: -10px 7px 5px 1px rgba(185,185,185,255);
+  background: var(--black);
 }
 
 .hand {
-  height:3px;
   position: absolute;
-  top:50%;
-  transform-origin: 100%;
+  top: 15rem;
   transform: rotate(90deg);
+  transform-origin: 100%;
   transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58 ,1);
+  height: 0.3rem;
 }
 
 .hour-hand {
-  width: 5rem;
   left: calc(50% - 5rem);
-  background:rgba(212,185,165,255);
+  width: 5rem;
+  background: var(--gold);
 }
 
 .hour-hand::after {
-  width: 1.3rem;
-  height: 3px;
-  display: block;
-  position: absolute;
   content: "";
-  background:rgba(212,185,165,255);
+  position: absolute;
   top: 0;
   left: 5rem;
+  display: block;
+  width: 1.3rem;
+  height: 0.3rem;
+  background: var(--gold); 
 }
 
 .min-hand {
-  width: 7rem;
   left: calc(50% - 7rem);
-  background:rgba(187,147,122,255);
+  width: 7rem;
+  background: var(--bronze);
 }
 
 .min-hand::after {
-  width: 1.3rem;
-  height: 3px;
-  display: block;
   content: "";
-  background:rgba(187,147,122,255);
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 7rem;
-  box-shadow: -1px 1px 1px 1px rgba(60,60,60,255);
+  display: block;
+  box-shadow: -0.1rem 0.1rem 0.1rem 0.1rem var(--grey60);
+  width: 1.3rem;
+  height: 0.3rem;
+  background: var(--bronze);  
 }
 
 .second-hand {
+  left: calc(50% - 2.9rem);
   width: 3rem;
-  left: calc(50% - 3rem + 1px);
-  background-image:linear-gradient(120deg, rgba(120,120,120,255), rgba(200,200,200,255));
+  background: linear-gradient(120deg, var(--grey120), var(--grey200));
 }
 
 .second-hand::after {
-  width: 1.3rem;
-  height: 3px;
-  display: block;
-  position: absolute;
   content: "";
-  background:rgba(120,120,120,255);
+  position: absolute;
   top: 0;
   left: 3rem;
+  display: block;
+  width: 1.3rem;
+  height: 0.3rem;
+  background: var(--grey120);
 }
 
 .hour-circle {
-  background: #ffffff;
-  width: 73%;
-  height: 73%;
-  border-radius: 50%;
   position: absolute;
-  top: 14%;
-  left: 14%;
+  top: 4.15rem;
+  left: 4.15rem;
+  border-radius: 50%;
+  width: 21.9rem;
+  height: 21.9rem;  
+  background: var(--white);
 }
 
 .minutes-circle {
-  background: #ffffff;
-  width: 93%;
-  height: 93%;
-  border-radius: 50%;
   position: absolute;
-  top: 3.9%;
-  left: 3.9%;
+  top: 1.1rem;
+  left: 1.1rem;
+  border-radius: 50%;
+  width: 28rem;
+  height: 28rem;
+  background: var(--white);
 }
 
 .hand-circle {
   position: absolute;
+  top: calc(50% - 0.4rem);
+  left: calc(50% - 0.4rem);
   border-radius:50%;
-  background-image:linear-gradient(120deg, rgba(187,147,122,255), rgba(212,185,165,255));
-  width: 8px;
-  height: 8px;
-  top: calc(50% - 4px);
-  left: calc(50% - 4px);
+  width: 0.8rem;
+  height: 0.8rem;
+  background:linear-gradient(120deg, var(--bronze), var(--gold));  
 }
 
 .centre-circle {
   position: absolute;
+  top: calc(50% - 0.1rem);
+  left: calc(50% - 0.1rem);
+  box-shadow: -0.1rem 0.1rem 0.1rem 0px var(--grey60);
   border-radius: 50%;
-  background: #000000;
-  width: 3px;
-  height: 3px;
-  top: calc(50% - 1px);
-  left: calc(50% - 1px);
-  box-shadow: -1px 1px 1px 0px rgba(60,60,60,255);
+  width: 0.3rem;
+  height: 0.3rem;  
+  background: var(--black);
 }
 
 .noon-six, .one-seven, .two-eight, .three-nine, .four-ten, .five-eleven {
-  width: 100%;
-  height: 4px;
-  background: #000000;
   position: absolute;
-  top: 50%;
+  top: 15rem;
+  width: 100%;
+  height: 0.4rem;
+  background: var(--black);  
 }
 
 .noon-six {
@@ -173,35 +168,35 @@ body {
 }
 
 .one-thirtyone, .two-thirtytwo, .three-thirtythree, .four-thirtyfour, .six-thirtysix, .seven-thirtyseven, .eight-thirtyeight, .nine-thirtynine, .eleven-fourtyone, .twelve-fourtytwo, .thirteen-fourtythree, .fourteen-fourtyfour, .sixteen-fourtysix, .seventeen-fourtyseven, .eighteen-fourtyeight, .nineteen-fourtynine, .twentyone-fiftyone, .twentytwo-fiftytwo, .twentythree-fiftythree, .twentyfour-fiftyfour, .twentysix-fiftysix, .twentyseven-fiftyseven, .twentyeight-fiftyeight, .twentynine-fiftynine {
-  width: 100%;
-  height: 2px;
-  background: rgba(201,201,201,255);
   position: absolute;
-  top: 50.25%;
+  top: 15rem;
+  width: 100%;
+  height: 0.2rem;
+  background: var(--grey200);  
 }
 
 .one-thirtyone {
   transform: rotate(276deg);
-  background-image:linear-gradient(90deg, rgba(201,201,201,255) 98%,rgba(140,140,140,255));
+  background:linear-gradient(90deg, var(--grey200) 98%, var(--grey140));
 }
 
 .two-thirtytwo {
   transform: rotate(282deg);
-  background-image:linear-gradient(90deg, rgba(201,201,201,255) 97%,rgba(140,140,140,255));
+  background: linear-gradient(90deg, var(--grey200) 97%, var(--grey140));
 }
 
 .three-thirtythree {
   transform: rotate(288deg);
-  background-image:linear-gradient(90deg, rgba(201,201,201,255) 96%,rgba(140,140,140,255));
+  background: linear-gradient(90deg, var(--grey200) 96%, var(--grey140));
 }
 
 .four-thirtyfour {
   transform: rotate(294deg);
-  background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
+  background: linear-gradient(90deg, var(--grey200) 95%, var(--grey140));
 }
 
 .six-thirtysix, .seven-thirtyseven, .eight-thirtyeight, .nine-thirtynine, .eleven-fourtyone, .twelve-fourtytwo, .thirteen-fourtythree, .fourteen-fourtyfour {
-  background-image:linear-gradient(90deg, rgba(201,201,201,255),rgba(140,140,140,255));
+  background: linear-gradient(90deg, var(--grey200), var(--grey140));
 }
 
 .six-thirtysix {
@@ -238,27 +233,27 @@ body {
 
 .sixteen-fourtysix {
   transform: rotate(6deg);
-  background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
+  background-image:linear-gradient(90deg, var(--grey200) 95%, var(--grey140));
 }
 
 .seventeen-fourtyseven {
   transform: rotate(12deg);
-  background-image:linear-gradient(90deg, rgba(201,201,201,255) 95%,rgba(140,140,140,255));
+  background:linear-gradient(90deg, var(--grey200) 95%, var(--grey140));
 }
 
 .eighteen-fourtyeight {
   transform: rotate(18deg);
-  background-image:linear-gradient(90deg, rgba(201,201,201,255) 97%,rgba(140,140,140,255));
+  background:linear-gradient(90deg, var(--grey200) 97%, var(--grey140));
 }
 
 .nineteen-fourtynine {
   transform: rotate(24deg);
-  background-image:linear-gradient(90deg, rgba(201,201,201,255) 98%,rgba(140,140,140,255));
+  background:linear-gradient(90deg, var(--grey200) 98%, var(--grey140));
 }
 
 .twentyone-fiftyone {
   transform: rotate(36deg);
-  background-image:linear-gradient(90deg, rgba(201,201,201,255) 99%,rgba(140,140,140,255));
+  background:linear-gradient(90deg, var(--grey200) 99%, var(--grey140));
 }
 
 .twentytwo-fiftytwo {

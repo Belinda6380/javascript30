@@ -1,5 +1,6 @@
    html {
-    background:#34c6c9;
+    box-sizing: border-box;
+    background: var(--mid-cyan);
   }
 
   *, *:before, *:after {
@@ -8,61 +9,61 @@
 
   input {
     width: 100%;
-    padding: 20px;
+    padding: 2rem;
   }
 
   .search-form {
-    max-width: 400px;
-    margin: 50px auto;
+    margin: 5rem auto;
+    max-width: 40rem;
   }
 
   input.search {
-    font-family: serif;
-    margin: 0;
-    text-align: center;
-    outline: 0;
-    border: 10px solid #F7F7F7;
-    width: 120%;
-    left: -10%;
     position: relative;
-    top: 10px;
     z-index: 2;
+    top: 1rem;
+    left: -4rem;
+    margin: 0;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1), inset 0 0 0.2rem rgba(0, 0, 0, 0.2);
+    border: 1rem solid var(--grey247);
+    border-radius: 0.5rem;
+    width: 120%;
+    outline: 0;
     font-size: 2.5rem;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+    font-family: serif;
+    text-align: center;
   }
 
   .suggestions {
+    position: relative;
     margin: 0;
     padding: 0;
-    position: relative;
   }
   .suggestions li {
-    background: #ffffff;
-    list-style: none;
-    border-bottom: 1px solid #D8D8D8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
-    margin: 0;
-    padding: 20px;
-    transition: background 0.2s;
-    display: flex;
     justify-content: space-between;
+    display: flex;
+    transition: background 0.2s;
+    margin: 0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.14);
+    border-bottom: 0.1rem solid var(--grey216);
+    padding: 2rem;
+    background: var(--white);
+    list-style: none;    
     text-transform: capitalize;
   }
 
   .suggestions li:nth-child(even) {
     transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
-    background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+    background: linear-gradient(to bottom, var(--white) 0%, var(--grey247) 100%);
   }
   .suggestions li:nth-child(odd) {
     transform: perspective(100px) rotateX(-3deg) translateY(3px);
-    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+    background: linear-gradient(to top, var(--white) 0%, var(--grey247) 100%);
   }
 
   span.population {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   .hl {
-    background: #ffee00;
+    background: var(--yellow);
   }

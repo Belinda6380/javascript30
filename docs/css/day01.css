@@ -1,10 +1,10 @@
-html {
-  font-size: 62.5%;
-}
 body,html {
-  margin: 0;
-  padding: 0;
   font-family: monospace;
+}
+
+kbd {
+  display: block;
+  font-size: 5rem;
 }
 
 .keys {
@@ -18,7 +18,7 @@ body,html {
 }
 
 .key {
-  border: 0.7rem solid #dd1c90;
+  border: 0.7rem solid var(--magenta);
   margin: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -26,17 +26,12 @@ body,html {
   transition: all .1s ease;
   width: 10rem;
   text-align: center;
-  color: #000000;
+  color: var(--black);
 }
 
 .playing {
   transform: scale(1.2);
-  border-color: #ffee00;
-}
-
-kbd {
-  display: block;
-  font-size: 5rem;
+  border-color: var(--yellow);
 }
 
 .sound {
@@ -44,5 +39,5 @@ kbd {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #1c56dd;
+  color: var(--blue);
 }

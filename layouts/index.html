@@ -11,7 +11,7 @@
 			<h2>Day {{ .Params.day | strings.TrimLeft "0" }}: {{ .Title }}</h2>
 			<a href="{{ .Permalink }}"><img src="{{ (delimit (slice "img/day" .Params.Day ".png") "") | absURL }}" class="preview" alt="{{ .Params.screenshot }}" /></a>
 			<nav class="links">
-				<a href="{{ .Permalink }}">Demo</a> | <a href="https://github.com/alicegherbison/javascript30/blob/master/static/js/day{{ .Params.day }}.js">JS</a> | <a href="https://github.com/alicegherbison/javascript30/blob/master/static/css/day{{ .Params.day }}.css">CSS</a> | <a href="https://github.com/alicegherbison/javascript30/blob/master/layouts/partials/demo/day{{ .Params.day }}.html">HTML</a>
+				<a href="{{ .Permalink }}">demo</a> | <a href="https://github.com/alicegherbison/javascript30/blob/master/static/js/day{{ .Params.day }}.js">JS</a> | <a href="https://github.com/alicegherbison/javascript30/blob/master/static/css/day{{ .Params.day }}.css">CSS</a> | <a href="https://github.com/alicegherbison/javascript30/blob/master/layouts/partials/demo/day{{ .Params.day }}.html">HTML</a>
 			</nav>
 			<h3>Learnings</h3>
 			{{ .Content }}				

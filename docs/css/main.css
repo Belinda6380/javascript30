@@ -1,3 +1,29 @@
+:root {
+	--black: #000000;
+	--grey60: #3c3c3c;
+  --grey120: #787878;
+  --grey124: #7c7c7c;
+  --grey140: #8c8c8c;
+  --grey185: #b9b9b9;
+	--grey200: #c8c8c8;
+	--grey216: #d8d8d8;
+	--grey226: #e2e2e2;
+  --grey247: #f7f7f7;
+	--grey: #eff0f1;
+	--white: #ffffff;
+	--purple: #9940ff;
+	--magenta: #dd1c90;
+	--orange: #f99e1f;
+	--yellow: #ffee00;
+	--green: #1faa22;
+	--cyan: #10f0f0;
+	--mid-cyan: #34c6c9;
+	--dark-cyan: #3bc1ac;
+	--blue: #1c56dd;
+  --gold: #d4b9a5;
+  --bronze: #bb937a;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -17,8 +43,8 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
 	border: 0;
+	padding: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -54,14 +80,14 @@ html {
 
 /* sectioning & structuring */
 body {
-	font-family: serif;
-	border-top: 8px solid #000;
+	border-top: 0.8rem solid;
 	font-size: 1.8rem;
 	line-height: 1.8;
+	font-family: serif;
 }
 
 header, main {
-	max-width: 470px;
+	max-width: 47rem;
 	padding: 0 1.8rem;
 }
 
@@ -75,20 +101,20 @@ main {
 
 /* headings */
 h1 {
-	font-weight: bold;
 	font-size: 4rem;
+	font-weight: bold;
 }
 
 h2 {
-	font-weight: bold;
-	font-size: 2.4rem;
 	margin-top: 1.8rem;
+	font-size: 2.4rem;
+	font-weight: bold;	
 }
 
 h3 {
-	font-weight: bold;
-	font-size: 2.1rem;
 	margin-top: 1.8rem;
+	font-size: 2.1rem;
+	font-weight: bold;
 }
 
 /* text & lists */
@@ -109,7 +135,7 @@ ol {
 }
 
 li {
-margin-top: 0.8rem;
+	margin-top: 0.8rem;
 }
 
 ul.exercises {
@@ -120,32 +146,27 @@ ul.exercises > li:not(first-child) {
 	margin-top: 3rem;
 }
 
-ul.links {
-	list-style: none;
+nav.links {
+	margin-top: 3rem;
+	line-height: 1rem;
 	text-align: center;
-}
-
-ul.links li {
-	display: inline;
-	margin: 0 1.8rem;
 }
 
 /* phrasing */
 a {
 	font-weight: bold;
-	color: #1c56dd;
+	color: var(--blue);
 }
 
 a:hover {
-	color: #1c56dd;
-	text-decoration: none;
 	cursor: e-resize;
+	text-decoration: none;
 }
 
 a[href^="http://"]:not([href*="github.io"]):hover,
 a[href^="https://"]:not([href*="github.io"]):hover {
     cursor: ne-resize;
-    color: #1faa22;
+    color: var(--green);
 }
 
 header a:hover {
@@ -161,23 +182,23 @@ em {
 }
 
 code {
+	background: var(--grey);
 	font-family: monospace;
-	background-color: #eff0f1;
 }
 
 p code, li code {
-	padding: 1px 5px;
+	padding: 0.1rem 0.5rem;
 }
 
 img.preview {
-	width: 100%;
 	display: block;
-	outline: 10px solid #ffee00;
 	margin-top: 1.8rem;
+	width: 100%;
+	outline: 1rem solid var(--yellow);
 }
 
 a img:hover {
-	outline: 10px solid #10F0F0;
+	outline: 1rem solid var(--cyan);
 }
 
 /* misc */
@@ -186,7 +207,6 @@ font-family: sans-serif;
 }
 
 ::selection {
-background-color: #ffee00;
-color: #000000;
+background: var(--yellow);
 text-shadow: none;
 }
