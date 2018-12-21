@@ -6,4 +6,4 @@ day = "27"
 screenshot = "Large boxes scrolling horizontally"
 +++
 
-I love the maths that's used for this one - what x values to grab and how to calculate the scroll's position.
+I love the maths used here - what x values to grab and how to calculate the scroll's position.

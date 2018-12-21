@@ -6,4 +6,4 @@ day = "28"
 screenshot = "Bird in a video"
 +++
 
-* How to calculate a playback rate using the current mouse position within an element when it uses a different scale
+* how to calculate a playback rate using the current mouse position within an element when it uses a different scale

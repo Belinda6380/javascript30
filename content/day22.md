@@ -7,4 +7,4 @@ screenshot = "Lorem ipsum text with highlighted link"
 +++
 
 * {{< code "getBoundingClientRect" >}} method
-* How to set the width and height of a hover state
+* how to set the width and height of a hover state

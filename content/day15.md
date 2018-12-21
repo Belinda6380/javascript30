@@ -8,9 +8,9 @@ screenshot = "Food menu order"
 
 * {{< code "submit" >}} event listener
 * ES6 shorthand for assigning object properties
-* Form elements {{< code "reset()" >}} method
+* form elements {{< code "reset()" >}} method
 * {{< code "localStorage" >}} converts things to strings
-* That you can use OR operators in variable assignments
-* Event delegation
+* that you can use OR operators in variable assignments
+* event delegation
 * {{< code "e.target" >}}
 * {{< code "matches()" >}} method from the browser API
