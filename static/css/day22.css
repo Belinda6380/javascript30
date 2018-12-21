@@ -38,7 +38,7 @@ nav {
   left:0;
   display: block;
   transition: all 0.2s;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
   border-bottom: 2px solid var(--white);
   border-radius: 2rem;
   background:white;

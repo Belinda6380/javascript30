@@ -23,8 +23,8 @@
     top: 1rem;
     left: -4rem;
     margin: 0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), inset 0 0 2px rgba(0, 0, 0, 0.2);
-    border: 10px solid var(--grey247);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1), inset 0 0 0.2rem rgba(0, 0, 0, 0.2);
+    border: 1rem solid var(--grey247);
     border-radius: 0.5rem;
     width: 120%;
     outline: 0;
@@ -43,8 +43,8 @@
     display: flex;
     transition: background 0.2s;
     margin: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
-    border-bottom: 1px solid var(--grey216);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.14);
+    border-bottom: 0.1rem solid var(--grey216);
     padding: 2rem;
     background: var(--white);
     list-style: none;    

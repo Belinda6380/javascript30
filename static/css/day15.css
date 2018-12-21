@@ -30,7 +30,7 @@ svg {
 }
 
 .wrapper {
-  border: 10px solid rgba(0,0,0,1);
+  border: 1rem solid rgba(0,0,0,1);
   max-width: 40re,;
   padding: 3rem;  
   background: var(--white);
@@ -46,7 +46,7 @@ svg {
 .plates li {
   display: flex;
   margin-top: 0;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 0.2rem solid var(--black);
   padding: 1rem 0;  
 }
 
@@ -76,7 +76,7 @@ svg {
 
 .add-items input {
   flex-grow: 1;
-  border: 2px solid var(--black);
+  border: 0.2rem solid var(--black);
   padding: 1rem;
   outline: 0;
   font-size: 100%;

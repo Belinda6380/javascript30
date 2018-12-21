@@ -4,7 +4,7 @@ html {
 
 .inbox {
   margin: 5rem auto;
-  box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+  box-shadow: 1rem 1rem 0 rgba(0,0,0,0.1);
   border-radius: 0.5rem;
   max-width: 40rem;
   background: var(--white);  
@@ -13,7 +13,7 @@ html {
 .item {
   align-items: center;
   display: flex;
-  border-bottom: 1px solid var(--grey226);
+  border-bottom: 0.1rem solid var(--grey226);
 }
 
 .item:last-child {
@@ -33,6 +33,6 @@ p {
   flex: 1;
   transition: background 0.2s;
   margin: 0;
-  border-left: 1px solid var(--grey185);
+  border-left: 0.1rem solid var(--grey185);
   padding: 2rem;  
 }

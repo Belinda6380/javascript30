@@ -6,7 +6,7 @@ body {
   position: relative;
   
   margin: 5rem auto;
-  box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+  box-shadow: 1rem 1rem 0 rgba(0,0,0,0.1);
   border-radius: 0.5rem;
   max-width: 50rem;
   padding: 1rem 2rem 1rem 5rem;
@@ -29,6 +29,6 @@ p::first-letter {
   top: 0;
   bottom: 0;
   left: 3rem;
-  border-left: 1px solid var(--grey185);
+  border-left: 0.1rem solid var(--grey185);
   width: 0.4rem;
 }

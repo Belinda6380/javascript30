@@ -9,13 +9,13 @@ body {
 
 #films {
   margin: auto;
-  box-shadow: 0 0 0 10px var(--black);
+  box-shadow: 0 0 0 1rem var(--black);
   width: 30rem;
   padding: 1rem;
   background: var(--white);
 }
 #films li {
-  border-bottom: 1px solid var(--black);
+  border-bottom: 0.1rem solid var(--black);
   padding: 1rem;
 }
 #films li:last-child {

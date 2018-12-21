@@ -44,7 +44,7 @@ body {
   align-items: center;
   justify-content: center;
   display: inline-flex;
-  box-shadow: inset 0 0 0 10px var(--black);
+  box-shadow: inset 0 0 0 1rem var(--black);
   width: 20rem;
   height: calc(100% - 4rem);  
   font-size: 8rem;

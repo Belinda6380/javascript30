@@ -9,9 +9,9 @@ body {
   position: relative;
   margin: 0 auto;
   box-shadow:
-    1px -1px 0 1px var(--grey124),
-    inset -15px 8px 5px 5px var(--grey185);
-  border: 10px solid var(--black);
+    0.1rem -0.1rem 0 0.1rem var(--grey124),
+    inset -1.5rem 0.8rem 0.5rem 0.5rem var(--grey185);
+  border: 1rem solid var(--black);
   border-radius: 50%;
   width: 30rem;
   height: 30rem;
@@ -21,7 +21,7 @@ body {
 
 .clock-face {
   position: relative;
-  transform: translateY(-3px);
+  transform: translateY(-0.3rem);
   width: 100%;
   height: 100%;
 }
@@ -32,7 +32,7 @@ body {
   left: 8.1rem;
   width: 14rem;
   height: 14rem;
-  box-shadow: -10px 7px 5px 1px var(--grey185);
+  box-shadow: -1rem 0.7rem 0.5rem 0.1rem var(--grey185);
   border-radius: 50%;
   background: var(--black);
 }
@@ -43,7 +43,7 @@ body {
   transform: rotate(90deg);
   transform-origin: 100%;
   transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58 ,1);
-  height: 3px;
+  height: 0.3rem;
 }
 
 .hour-hand {
@@ -59,7 +59,7 @@ body {
   left: 5rem;
   display: block;
   width: 1.3rem;
-  height: 3px;
+  height: 0.3rem;
   background: var(--gold); 
 }
 
@@ -75,14 +75,14 @@ body {
   top: 0;
   left: 7rem;
   display: block;
-  box-shadow: -1px 1px 1px 1px var(--grey60);
+  box-shadow: -0.1rem 0.1rem 0.1rem 0.1rem var(--grey60);
   width: 1.3rem;
-  height: 3px;
+  height: 0.3rem;
   background: var(--bronze);  
 }
 
 .second-hand {
-  left: calc(50% - 3rem + 1px);
+  left: calc(50% - 2.9rem);
   width: 3rem;
   background: linear-gradient(120deg, var(--grey120), var(--grey200));
 }
@@ -94,7 +94,7 @@ body {
   left: 3rem;
   display: block;
   width: 1.3rem;
-  height: 3px;
+  height: 0.3rem;
   background: var(--grey120);
 }
 
@@ -132,7 +132,7 @@ body {
   position: absolute;
   top: calc(50% - 0.1rem);
   left: calc(50% - 0.1rem);
-  box-shadow: -1px 1px 1px 0px var(--grey60);
+  box-shadow: -0.1rem 0.1rem 0.1rem 0px var(--grey60);
   border-radius: 50%;
   width: 0.3rem;
   height: 0.3rem;  

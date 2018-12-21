@@ -21,7 +21,7 @@ video {
   display:flex;
   overflow: hidden;
   margin: 1rem;
-  box-shadow:0 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow:0 0 0.1rem 0.3rem rgba(0,0,0,0.1);
   border: 1rem solid var(--black);
   border-radius: 5rem;
   background:var(--dark-cyan);
@@ -37,6 +37,6 @@ video {
   padding: 0.2rem;
   background: var(--orange);
   font-weight: bold;
-  text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+  text-shadow: 0.1rem 0.1rem 0 rgba(0,0,0,0.2);
   color: var(--black);  
 }
