@@ -146,14 +146,10 @@ ul.exercises > li:not(first-child) {
 	margin-top: 3rem;
 }
 
-ul.links {
+nav.links {
+	margin-top: 3rem;
+	line-height: 1rem;
 	text-align: center;
-	list-style: none;
-}
-
-ul.links li {
-	display: inline;
-	margin: 0 1.8rem;
 }
 
 /* phrasing */
