@@ -12,7 +12,7 @@
 			<a href="{{ .Permalink }}"><img src="{{ (delimit (slice "img/day" .Params.Day ".png") "") | absURL }}" class="preview" alt="{{ .Params.screenshot }}" /></a>
 			<ul class="links">
 				<li><a href="{{ .Permalink }}">Demo</a></li>
-				<li><a href="https://github.com/alicegherbison/javascript30/tree/master/day{{ .Params.day }}">Github</a></li>
+				<li><a href="https://github.com/alicegherbison/javascript30/blob/master/static/js/day{{ .Params.day }}.js">JS</a> | <a href="https://github.com/alicegherbison/javascript30/blob/master/static/css/day{{ .Params.day }}.css">CSS</a> | <a href="https://github.com/alicegherbison/javascript30/blob/master/layouts/partials/demo/day{{ .Params.day }}.html">HTML</a></li>
 			</ul>
 			<h3>Learnings</h3>
 			{{ .Content }}				
